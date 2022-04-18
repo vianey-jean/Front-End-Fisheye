@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="fr">Fisheye</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" >
+    <link rel="stylesheet"  href="ressources/css/style.css"  type="text/css"/>
+    
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye</title>
+    
+   
   </head>
   <body>
-    <header>
-        <img src="assets/images/logo.png" class="logo" />
-        <h1>Nos photographes</h1>
+    <header role="banner">
+      <picture class="partie-header">
+        <source srcset="ressources/img/logo-200.png" media="(max-width:992px)">
+        <a href="index.html" aria-label="=Fisheye, page d'acceuil">
+          <img src="ressources/img/logo.png" class="logo" alt="logo du site" />
+        </a>
+      </picture>
+      <nav class="partie-header" aria-label="catégories des photographes">
+        <a class="lien-filtre" href="#" aria-label="portrait" onclick="filtres('portrait')"><span aria-hidden="true">#portrait</span></a>
+        <a class="lien-filtre" href="#" aria-label="art" onclick="filtres('art')"><span aria-hidden="true">#art</span></a>
+        <a class="lien-filtre" href="#" aria-label="fashion" onclick="filtres('fashion')"><span aria-hidden="true">#fashion</span></a>
+        <a class="lien-filtre" href="#" aria-label="architecture" onclick="filtres('architecture')"><span aria-hidden="true">#architecture</span></a>
+        <a class="lien-filtre" href="#" aria-label="travel" onclick="filtres('travel')"><span aria-hidden="true">#travel</span></a>
+        <a class="lien-filtre" href="#" aria-label="sports" onclick="filtres('sports')"><span aria-hidden="true">#sport</span></a>
+        <a class="lien-filtre" href="#" aria-label="animals" onclick="filtres('animals')"><span aria-hidden="true">#animals</span></a>
+        <a class="lien-filtre" href="#" aria-label="events" onclick="filtres('events')"><span aria-hidden="true">#events</span></a>
+    </nav>
+        
+        
     </header>
-    <main id="main">
-        <div class="photographer_section"></div>
+    <main id="main" role="main">
+
+      <h1 class=" partie-header titre-main">Nos photographes</h1>
+        <div id="liste-photographes"></div>
     </main>
-    <script src="scripts/factories/Photographer.js"></script>
-    <script src="scripts/pages/index.js"></script>
-    <script src="scripts/pages/photographer.js"></script>
+   <!-- Api -->
+   <script src="ressources/js/api/Api.js"></script>
+   <!-- Factory -->
+   <script src="ressources/js/factory/PhotographesFactory.js"></script>
+   <!-- Models -->
+   <script src="ressources/js/models/Photographe.js"></script>
+   <!-- Templates -->
+   <script src="ressources/js/templates/PhotographesCarte.js"></script>
+   <!-- Accueil -->
+   <script src="ressources/js/index.js"></script>   
   </body>
 </html>
