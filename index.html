@@ -13,13 +13,13 @@
    
   </head>
   <body>
-    <header role="banner">
-      <picture class="partie-header">
-        <source srcset="ressources/img/Logo-200.png" media="(max-width: 992px)">
-        <a href="index.html" aria-label="=Fisheye, page d'acceuil">
-          <img src="ressources/img/Logo.png" class="logo" alt="logo du site" />
-        </a>
-      </picture>
+    <header class="partie-header" >
+      <a href="./index.html" class="container" tabindex="2" aria-label="logo du site et retour à l'accueil"
+      role="button" aria-pressed="false">
+      <img src="ressources/img/Logo-200.png" class="logo-2" alt="logo de couleur différente au focus" />
+      <img src="ressources/img/Logo.png" class="logo-1" alt="logo du site et retour à l'accueil" />
+  </a>
+      
       <nav class="partie-header" aria-label="catégories des photographes">
         <a class="lien-filtre" href="#" aria-label="portrait" onclick="filtres('portrait')"><span aria-hidden="true">#portrait</span></a>
         <a class="lien-filtre" href="#" aria-label="art" onclick="filtres('art')"><span aria-hidden="true">#art</span></a>
@@ -33,7 +33,7 @@
         
         
     </header>
-    <main id="main" role="main">
+    <main id="main">
 
       <h1 class=" partie-header titre-main">Nos photographes</h1>
         <div id="liste-photographes"></div>

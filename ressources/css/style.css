@@ -44,16 +44,34 @@ header {
 .partie-header {
   text-align: center;
 }
-picture.partie-header {
-  width: 25%;
-}
+
 nav.partie-header {
   justify-content: center;
   width: 50%;
 }
 
-.logo {
-  width: 250px;
+header .container .logo-1 {
+
+  box-sizing: border-box;
+  width: 300px;
+  height: auto;
+  margin: 0;
+  padding-left: 25%;
+  top: 35px;
+  left: 5%;
+  z-index: 1;
+}
+header .container .logo-2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 300px;
+  height: auto;
+  margin: 0;
+  padding-left: 25%;
+  top: 35px;
+  left: 5%;
+  z-index: 2;
+  opacity: 0;
 }
 
 nav {
