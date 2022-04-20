@@ -1,4 +1,4 @@
-class Photographe {
+class Photographe {//création et recuperation des valeurs
     constructor(photographers) {
         this._id = photographers.id;
         this._name = photographers.name;

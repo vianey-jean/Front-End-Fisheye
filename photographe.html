@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FishEye - Photographe</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap">
-    <link rel="stylesheet" href="ressources/css/style.css">
-</head>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title lang="fr">Fisheye</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" >
+        <link rel="stylesheet"  href="ressources/css/style.css"  type="text/css"/>
+        
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        
+       
+      </head>
 <body>
-    <header>
-        <picture class="partie-header">
-            <source srcset="ressources/img/Logo-200.png" media="(max-width: 992px)">
-            <a href="index.html">
-                <img alt="Fisheye Accueil" class="logo" src="ressources/img/Logo.png">
-            </a>
-        </picture>
+    <header class="partie-header" >
+        <a href="./index.html" class="container" tabindex="2" aria-label="logo du site et retour à l'accueil"
+        role="button" aria-pressed="false">
+        <img src="ressources/img/Logo-200.png" class="logo-2" alt="logo de couleur différente au focus" />
+        <img src="ressources/img/Logo.png" class="logo-1" alt="logo du site et retour à l'accueil" />
+       
+        </a>
     </header>
 
     <main>
@@ -24,7 +28,6 @@
         <div id="trier">
             <label class="trier-texte" for="select-trier">Trier par </label>
             <select id="select-trier" onchange="trier(this)">
-                <option disabled selected>---</option>
                 <option>Popularité</option>
                 <option>Date</option>
                 <option>Titre</option>
@@ -37,7 +40,6 @@
 
         <section id="profil-likes-tarif">
             <span id="profil-likes"></span>
-            <span id="profil-tarif"></span>
         </section>
 
         <section id="lightbox">
@@ -72,6 +74,22 @@
             </div>
         </section>
     </main>
-
-  </body>
+    
+    <!-- Api -->
+    <script src="ressources/js/api/Api.js"></script>
+    <!-- Factory -->
+    <script src="ressources/js/factory/PhotographesFactory.js"></script>
+    <script src="ressources/js/factory/ProfilPhotographeFactory.js"></script>
+    
+    <!-- Models -->
+    <script src="ressources/js/models/Photographe.js"></script>
+    <script src="ressources/js/models/Photo.js"></script>
+    <script src="ressources/js/models/Video.js"></script>
+    <!-- Templates -->
+    <script src="ressources/js/templates/PhotographeProfil.js"></script>
+    <script src="ressources/js/templates/PhotographePhoto.js"></script>
+    <script src="ressources/js/templates/PhotographeVideo.js"></script>
+    <!-- Profil -->
+    <script src="ressources/js/Profil.js"></script>  
+</body>
 </html>

@@ -1,8 +1,8 @@
 class Accueil {
     constructor() {
-        this.listePhotographes = document.querySelector('#liste-photographes');
+        this.listePhotographes = document.querySelector('#liste-photographes');//selection sur la classe liste-photographes
         
-        this.photographesApi = new PhotographeApi('ressources/data/photographers.json');
+        this.photographesApi = new PhotographeApi('ressources/data/photographers.json');// récuperation donné sur json
     }
 
     async main() {
@@ -29,6 +29,8 @@ class Accueil {
 
 let accueil = new Accueil();
 accueil.main()
+
+
 
 
 

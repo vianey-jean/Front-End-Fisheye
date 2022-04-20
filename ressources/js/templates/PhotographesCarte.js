@@ -10,7 +10,7 @@ class PhotographesCarte {
         this.photographe.tags.forEach(tag => createur.classList.add(tag));
 
         let profilPhotographe = `
-            <a class="lien-photographe"  aria-label="${this.photographe.name}">
+            <a class="lien-photographe" href="photographe.html?id=${this.photographe.id}" aria-label="${this.photographe.name}">
                 <img alt="${this.photographe.name}" class="img-photographe" src="ressources/img/Photographers_ID_Photos/${this.photographe.portrait}">
                 <h2 class="nom-photographe">${this.photographe.name}</h2>
             </a>
