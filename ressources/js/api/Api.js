@@ -39,7 +39,5 @@ class PhotographeApi extends Api {
         return await this.getPhotosJSON()
     }
 
-    async getLikes() {
-        return await this.getLikesJSON()
-    }
+ 
 }

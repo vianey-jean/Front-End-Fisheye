@@ -3,6 +3,7 @@ class Profil {
         this.profilPhotographe = document.querySelector('#profil-infos-photographe');
         this.profilListePhotos = document.querySelector('#profil-liste-photos');
         this.profilLikes = document.querySelector('#profil-likes');
+        this.profilTarif = document.querySelector('#profil-tarif');
 
         this.photographesApi = new PhotographeApi('ressources/data/photographers.json');
     }
@@ -40,7 +41,11 @@ class Profil {
             this.profilPhotographe.append(
                 ProfilTemplate.createPhotographeProfil()
             );
-         
+            if (photographe.id == idURL) {
+                this.profilTarif.append(
+                    `${photographe.price}€ / jour`
+                )
+            }
         });
 
         let photosData = await this.photographesApi.getPhotos();
@@ -59,12 +64,25 @@ class Profil {
             }
         });
 
-
+        let Likes = await this.photographesApi.getLikes();
+        let nbLikeTotal = 0;
+        Likes.forEach(like => {
+            if (like.photographerId == idURL) {
+                nbLikeTotal = nbLikeTotal + like.likes;
+            }
+        });
+        let LikeTemplate = new PhotographeLike(nbLikeTotal);
+        this.profilLikes.append(
+            LikeTemplate.createLikesProfil()
+        );
     }
 }
 
 const profil = new Profil();
 profil.main()
+
+
+
 
 
 

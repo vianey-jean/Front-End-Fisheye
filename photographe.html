@@ -14,13 +14,14 @@
       </head>
 <body>
     <header class="partie-header" >
-        <a href="./index.html" class="container" tabindex="2" aria-label="logo du site et retour à l'accueil"
+        <a href="index.html" class="container" tabindex="2" aria-label="logo du site et retour à l'accueil"
         role="button" aria-pressed="false">
         <img src="ressources/img/Logo-200.png" class="logo-2" alt="logo de couleur différente au focus" />
         <img src="ressources/img/Logo.png" class="logo-1" alt="logo du site et retour à l'accueil" />
        
         </a>
     </header>
+
 
     <main>
         <section id="profil-infos-photographe"></section>
@@ -40,6 +41,7 @@
 
         <section id="profil-likes-tarif">
             <span id="profil-likes"></span>
+            <span id="profil-tarif"></span>
         </section>
 
         <section id="lightbox">
@@ -80,7 +82,7 @@
     <!-- Factory -->
     <script src="ressources/js/factory/PhotographesFactory.js"></script>
     <script src="ressources/js/factory/ProfilPhotographeFactory.js"></script>
-    
+    <script src="ressources/js/factory/PhotoFactory.js"></script>
     <!-- Models -->
     <script src="ressources/js/models/Photographe.js"></script>
     <script src="ressources/js/models/Photo.js"></script>
@@ -89,7 +91,7 @@
     <script src="ressources/js/templates/PhotographeProfil.js"></script>
     <script src="ressources/js/templates/PhotographePhoto.js"></script>
     <script src="ressources/js/templates/PhotographeVideo.js"></script>
+    <script src="ressources/js/templates/PhotographeLike.js"></script>
     <!-- Profil -->
-    <script src="ressources/js/Profil.js"></script>  
-</body>
+    <script src="ressources/js/Profil.js"></script>  </body>
 </html>

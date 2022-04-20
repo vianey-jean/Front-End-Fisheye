@@ -1,5 +1,5 @@
 class PhotographesFactory {
-    constructor(photographers) {// création et initialisation objet photographesFactory
+    constructor(photographers) {
         return new Photographe(photographers)
     }
 }
