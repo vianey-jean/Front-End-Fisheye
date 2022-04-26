@@ -50,8 +50,6 @@ nav.partie-header {
   width: 50%;
 }
 
-
-
 header .container .logo-1 {
   box-sizing: border-box;
   width: 300px;
@@ -437,7 +435,6 @@ textarea.champ-form {
     width: 100%;
   }
   header .container .logo-1 {
-
     box-sizing: border-box;
     width: 150px;
     height: auto;

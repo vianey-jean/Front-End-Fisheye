@@ -1,98 +1,153 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title lang="fr">Fisheye</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" >
-        <link rel="stylesheet"  href="ressources/css/style.css"  type="text/css"/>
-        
-        <link rel="icon" type="image/png" href="assets/favicon.png">
-        
-       
-      </head>
-<body>
-    <header class="partie-header" >
-        <a href="index.html" class="container" tabindex="2" aria-label="logo du site et retour à l'accueil"
-        role="button" aria-pressed="false">
-        <img src="ressources/img/Logo-200.png" class="logo-2" alt="logo de couleur différente au focus" />
-        <img src="ressources/img/Logo.png" class="logo-1" alt="logo du site et retour à l'accueil" />
-       
-        </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="fr">Fisheye</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+    />
+    <link rel="stylesheet" href="ressources/css/style.css" type="text/css" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+  <body>
+    <header class="partie-header">
+      <a
+        href="index.html"
+        class="container"
+        tabindex="2"
+        aria-label="logo du site et retour à l'accueil"
+        role="button"
+        aria-pressed="false"
+      >
+        <img
+          src="ressources/img/Logo-200.png"
+          class="logo-2"
+          alt="logo de couleur différente au focus"
+        />
+        <img
+          src="ressources/img/Logo.png"
+          class="logo-1"
+          alt="logo du site et retour à l'accueil"
+        />
+      </a>
     </header>
 
-
     <main>
-        <section id="profil-infos-photographe"></section>
+      <section id="profil-infos-photographe"></section>
 
-        <div id="trier">
-            <label class="trier-texte" for="select-trier">Trier par </label>
-            <select id="select-trier" onchange="trier(this)">
-                <option disabled selected>Selection</option>
-                <option>Popularité</option>
-                <option>Date</option>
-                <option>Titre</option>
-            </select>
+      <div id="trier">
+        <label class="trier-texte" for="select-trier">Trier par </label>
+        <select id="select-trier" onchange="trier(this)">
+          <option disabled selected>Selection</option>
+          <option>Popularité</option>
+          <option>Date</option>
+          <option>Titre</option>
+        </select>
+      </div>
+
+      <section id="profil-liste-photos">
+        <span id="aucun-contenu"
+          >Aucun contenu pour ce filtre sur ce profil.</span
+        >
+      </section>
+
+      <section id="profil-likes-tarif">
+        <span id="profil-likes"></span>
+        <span id="profil-tarif"></span>
+      </section>
+
+      <section id="lightbox">
+        <div class="contenu-lightbox">
+          <span
+            class="fermer fermer-lightbox"
+            aria-label="Fermer la modal"
+            onclick="fermerLightbox()"
+          ></span>
+          <span
+            class="fleche"
+            aria-label="Image précédente"
+            id="fleche-gauche"
+          ></span>
+          <span
+            class="fleche"
+            aria-label="Image suivante"
+            id="fleche-droite"
+          ></span>
+          <div class="photo-titre-lightbox">
+            <div id="contenu-photo-lightbox"></div>
+            <span class="titre-photo" id="titre-photo-lightbox"></span>
+          </div>
         </div>
+      </section>
 
-        <section id="profil-liste-photos">
-            <span id="aucun-contenu">Aucun contenu pour ce filtre sur ce profil.</span>
-        </section>
-
-        <section id="profil-likes-tarif">
-            <span id="profil-likes"></span>
-            <span id="profil-tarif"></span>
-        </section>
-
-        <section id="lightbox">
-            <div class="contenu-lightbox">
-                <span class="fermer fermer-lightbox" aria-label="Fermer la modal" onclick="fermerLightbox()"></span>
-                <span class="fleche" aria-label="Image précédente" id="fleche-gauche"></span>
-                <span class="fleche" aria-label="Image suivante" id="fleche-droite"></span>
-                <div class="photo-titre-lightbox">
-                    <div id="contenu-photo-lightbox">
-                        
-                    </div>
-                    <span class="titre-photo" id="titre-photo-lightbox"></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h1>Contactez-moi <span id="nom-contact"></span></h1>
-            <div class="contenu-contact">
-                <span class="fermer" id="fermer-contact" onclick="fermerContact()"></span>
-                <form method="get">
-                    <label class="label-form">Prénom</label>
-                    <input title="Modifier le prénom" class="champ-form action-form" id="form-prenom" type="text" required>
-                    <label class="label-form">Nom</label>
-                    <input title="Modifier le nom" class="champ-form action-form" id="form-nom" type="text" required>
-                    <label class="label-form">Email</label>
-                    <input title="Modifier l'email" class="champ-form action-form" id="form-email" type="text" required>
-                    <label class="label-form">Votre message</label>
-                    <textarea title="Modifier le message" class="champ-form action-form" id="form-message" required></textarea>
-                    <button title="Envoyer le message" class="btn-valider action-form" type="button" onclick="validerContact()">Envoyer</button>
-                </form>
-            </div>
-        </section>
+      <section id="contact">
+        <h1>Contactez-moi <span id="nom-contact"></span></h1>
+        <div class="contenu-contact">
+          <span
+            class="fermer"
+            id="fermer-contact"
+            onclick="fermerContact()"
+          ></span>
+          <form method="get">
+            <label class="label-form">Prénom</label>
+            <input
+              title="Modifier le prénom"
+              class="champ-form action-form"
+              id="form-prenom"
+              type="text"
+              required
+            />
+            <label class="label-form">Nom</label>
+            <input
+              title="Modifier le nom"
+              class="champ-form action-form"
+              id="form-nom"
+              type="text"
+              required
+            />
+            <label class="label-form">Email</label>
+            <input
+              title="Modifier l'email"
+              class="champ-form action-form"
+              id="form-email"
+              type="text"
+              required
+            />
+            <label class="label-form">Votre message</label>
+            <textarea
+              title="Modifier le message"
+              class="champ-form action-form"
+              id="form-message"
+              required
+            ></textarea>
+            <button
+              title="Envoyer le message"
+              class="btn-valider action-form"
+              type="button"
+              onclick="validerContact()"
+            >
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    
+
     <!-- Api -->
-    <script src="ressources/js/api/Api.js"></script>
+   
     <!-- Factory -->
-    <script src="ressources/js/factory/PhotographesFactory.js"></script>
-    <script src="ressources/js/factory/ProfilPhotographeFactory.js"></script>
-    <script src="ressources/js/factory/PhotoFactory.js"></script>
+
     <!-- Models -->
-    <script src="ressources/js/models/Photographe.js"></script>
-    <script src="ressources/js/models/Photo.js"></script>
-    <script src="ressources/js/models/Video.js"></script>
+ 
     <!-- Templates -->
-    <script src="ressources/js/templates/PhotographeProfil.js"></script>
-    <script src="ressources/js/templates/PhotographePhoto.js"></script>
-    <script src="ressources/js/templates/PhotographeVideo.js"></script>
-    <script src="ressources/js/templates/PhotographeLike.js"></script>
+
     <!-- Profil -->
-    <script src="ressources/js/Profil.js"></script>  </body>
+    <script src="ressources/js/Profil.js" type="module">
+      
+    </script>
+  </body>
 </html>
