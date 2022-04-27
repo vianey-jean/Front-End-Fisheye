@@ -14,7 +14,7 @@ btnSelected.push(option1Btn, option2Btn, option3Btn);
 
 // async functions json file data extract
 const fetchData = async () => {
-  const res = await fetch("./ressources/data/photographers.json");
+  const res = await fetch("ressources/data/photographers.json");
   const data = await res.json();
   return data;
 };

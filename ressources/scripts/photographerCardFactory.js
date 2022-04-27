@@ -32,7 +32,7 @@ this.photographerCardFactory = (photographerCard) => {
     const photographerImg = document.createElement("div");
     photographerImg.classList.add("photographer__container");
     photographerImg.innerHTML = `<img class="photographer__container__img"
-         src="../ressources/images/Photos/Photographers_ID_Photos/${photographerCard.portrait}" tabindex="8" alt="portrait de ${photographerCard.name}" aria-label="portrait de ${photographerCard.name}"/>`;
+         src="ressources/images/Photos/Photographers_ID_Photos/${photographerCard.portrait}" tabindex="8" alt="portrait de ${photographerCard.name}" aria-label="portrait de ${photographerCard.name}"/>`;
     document.getElementById("photographer").appendChild(photographerImg);
 
     // add photographer price per day at the footer infos
