@@ -5,8 +5,8 @@ this.mediaPortfolioFactory = (portfolio, directory) => {
     mediaCard.classList.add("portfolio__content__card");
     if (portfolio.video) {
       mediaCard.innerHTML = `
-            <video class="portfolio__content__card__media" data-media-id="${portfolio.id}" src="../ressources/images/Photos/${directory}/${portfolio.video}" tabindex="12" preload="metadata" aria-label="${portfolio.alt}, ouvrir en pleine page">
-                <source src="../ressources/images/Photos/${directory}/${portfolio.video}#t=0.1" type="video/mp4">
+            <video class="portfolio__content__card__media" data-media-id="${portfolio.id}" src="ressources/images/Photos/${directory}/${portfolio.video}" tabindex="12" preload="metadata" aria-label="${portfolio.alt}, ouvrir en pleine page">
+                <source src="ressources/images/Photos/${directory}/${portfolio.video}#t=0.1" type="video/mp4">
             </video>
             <span class="portfolio__content__card__media__icon fa-solid fa-video" alt="icone qui indique qu'il s'agit d'une image extraite d'une vidéo"></span>
             <div class="portfolio__content__card__legend">
@@ -19,7 +19,7 @@ this.mediaPortfolioFactory = (portfolio, directory) => {
             `;
     } else {
       mediaCard.innerHTML = `
-        <img class="portfolio__content__card__media" data-media-id="${portfolio.id}" src="../ressources/images/Photos/${directory}/${portfolio.image}"
+        <img class="portfolio__content__card__media" data-media-id="${portfolio.id}" src="ressources/images/Photos/${directory}/${portfolio.image}"
          tabindex="12" alt="${portfolio.alt}" aria-label="${portfolio.alt}, ouvrir en pleine page"/>
         <div class="portfolio__content__card__legend">
             <h3 class="portfolio__content__card__legend__title" tabindex="12" lang="en" aria-label="${portfolio.title}">${portfolio.title}</h3>

@@ -5,7 +5,7 @@ let tagsPhotographerDom = document.querySelector(".photographer__legend__tags");
 
 // async functions json file data extract
 const fetchData = async () => {
-  const res = await fetch("./ressources/data/photographers.json");
+  const res = await fetch("ressources/data/photographers.json");
   const data = await res.json();
   return data;
 };

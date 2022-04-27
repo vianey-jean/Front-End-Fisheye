@@ -53,7 +53,7 @@ const getPhotographerCard = (photographers) => {
     );
     Array.from(personnalTags).forEach((personnalTag) => {
       personnalTag.addEventListener("click", (event) => {
-        document.location.href = `../index.html?tag=${event.target.getAttribute(
+        document.location.href = `index.html?tag=${event.target.getAttribute(
           "data-tag"
         )}`;
       });
