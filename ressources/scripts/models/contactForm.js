@@ -93,7 +93,9 @@ this.getContactForm = (person) => {
     event.stopPropagation();
 
     let firstNameIsValid = false;
-    if (/^[A-Z|a-z|-]{2,}$/g.test(firstName.value)) {
+
+    //if (/^[A-Z|a-z|-]{2,}$/g.test(firstName.value))
+    if (/^[-a-zA-Z0-9_:,.' ']{2,}$/g.test(firstName.value)) {
       firstNameIsValid = true;
       document.getElementById("first-error").style.display = "none";
     } else {
@@ -101,7 +103,7 @@ this.getContactForm = (person) => {
     }
 
     let lastNameIsValid = false;
-    if (/^[A-Z|a-z|-]{2,}$/g.test(lastName.value)) {
+    if (/^[-a-zA-Z0-9_:,.' ']{2,}$/g.test(lastName.value)) {
       lastNameIsValid = true;
       document.getElementById("last-error").style.display = "none";
     } else {
