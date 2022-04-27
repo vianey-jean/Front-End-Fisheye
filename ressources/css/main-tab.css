@@ -1,0 +1,74 @@
+body {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 100%;
+  font-style: normal;
+  background-color: #fff;
+  margin: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+header {
+  height: 160px;
+}
+header .container {
+  width: 40%;
+}
+header .container .logo-1 {
+  top: 30px;
+  left: 8%;
+}
+header .container .logo-2 {
+  top: 30px;
+  left: 8%;
+  position: absolute;
+}
+header .shortcut {
+  display: none;
+}
+header .tags {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  margin: 0;
+}
+header .tags__liste {
+  flex-wrap: wrap;
+  margin: 0 7%;
+}
+header .tags__liste:focus, header .tags__liste:active {
+  border-radius: 0;
+  border: none;
+}
+
+#main {
+  padding-top: 160px;
+}
+#main h1 {
+  top: 35px;
+  margin-right: 10%;
+}
+#main h1:focus {
+  color: #901c1c;
+}
+#main .photographers .photographer__card:focus {
+  border: none;
+  border-radius: 0;
+}
+#main .photographers .photographer__legend:focus {
+  border: none;
+  border-radius: 0;
+}
+#main .photographers .photographer__legend__tags:focus {
+  border: none;
+  border-radius: 0;
+}

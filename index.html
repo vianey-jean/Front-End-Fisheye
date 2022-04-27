@@ -2,20 +2,37 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title lang="fr">Fisheye</title>
+    <title>Fisheye</title>
+    <link rel="icon" type="image/png" href="./ressources/images/minilogo.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="ressources/css/style.css" type="text/css" />
-
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-   
+    <link rel="stylesheet" type="text/css" href="ressources/css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all and (max-width: 1200px)"
+      href="ressources/css/main-tab.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all and (max-width: 800px)"
+      href="ressources/css/main-mobile.css"
+    />
   </head>
+
   <body>
-    <header class="partie-header">
+    <header id="header">
       <a
         href="./index.html"
         class="container"
@@ -25,97 +42,60 @@
         aria-pressed="false"
       >
         <img
-          src="ressources/img/Logo-200.png"
+          src="./ressources/images/logo2.png"
           class="logo-2"
           alt="logo de couleur différente au focus"
         />
         <img
-          src="ressources/img/Logo.png"
+          src="./ressources/images/logo.png"
           class="logo-1"
           alt="logo du site et retour à l'accueil"
         />
       </a>
-
-      <nav class="partie-header" aria-label="catégories des photographes">
-       <a
-          class="lien-filtre"
-          href="#"
-          aria-label="portrait"
-          onclick="filtres('portrait')"
-          ><span aria-hidden="true">#portrait</span></a
+      <a
+        class="shortcut"
+        id="shortcut"
+        href="index.html"
+        tabindex="1"
+        role="button"
+        aria-pressed="false"
+        aria-label="activer pour consulter directement notre liste de photographes"
+      >
+        Passer au contenu
+      </a>
+      <nav id="tags" class="tags">
+        <p
+          class="tags__liste"
+          id="tagsList"
+          role="navigation"
+          tabindex="3"
+          aria-label="trier nos photographes à l'aide d'un mot clef"
         >
-        <a
-          class="lien-filtre"
-          href="#"
-          aria-label="art"
-          onclick="filtres('art')"
-          ><span aria-hidden="true">#art</span></a
-        >
-        <a
-          class="lien-filtre"
-          href="#"
-          aria-label="fashion"
-          onclick="filtres('fashion')"
-          ><span aria-hidden="true">#fashion</span></a
-        >
-        <a
-          class="lien-filtre"
-          href="#"
-          aria-label="architecture"
-          onclick="filtres('architecture')"
-          ><span aria-hidden="true">#architecture</span></a
-        >
-        <a
-          class="lien-filtre"
-          href="#"
-          aria-label="travel"
-          onclick="filtres('travel')"
-          ><span aria-hidden="true">#travel</span></a
-        >
-        <a
-          class="lien-filtre"
-          href="#"
-          aria-label="sports"
-          onclick="filtres('sports')"
-          ><span aria-hidden="true">#sport</span></a
-        >
-        <a
-          class="lien-filtre"
-          href="#"
-          aria-label="animals"
-          onclick="filtres('animals')"
-          ><span aria-hidden="true">#animals</span></a
-        >
-        <a
-          class="lien-filtre"
-          href="#"
-          aria-label="events"
-          onclick="filtres('events')"
-          ><span aria-hidden="true">#events</span></a
-        >
+          <!-- insert tags via index.js -->
+        </p>
       </nav>
     </header>
     <main id="main">
-      <h1 class="partie-header titre-main">Nos photographes</h1>
-      <a id="retour-contenu" href="#">Passer au contenu</a>
-      <div id="liste-photographes"></div>
+      <h1
+        aria-label="contenu de la page d'accueil"
+        tabindex="5"
+        id="main-content"
+      >
+        Nos photographes
+      </h1>
+      <section
+        class="photographers"
+        id="photographers"
+        aria-label="tous nos photographes"
+      >
+        <!-- insert articles (photographers) via index.js -->
+      </section>
     </main>
-    <!-- Api -->
-  
-    <!--Creation du liaosn-->
-    <!-- Factory -->
+    <script src="./ressources/scripts/shortcutToMain.js"></script>
+    <script src="./ressources/scripts/tagsNavWithKeyboard.js"></script>
+    <script src="./ressources/scripts/headerTagFactory.js"></script>
+    <script src="./ressources/scripts/photographerIndexCardFactory.js"></script>
 
-    <!--création de l'objet PhotographesFactory-->
-    <!-- Models -->
-  
-    <!--Récuperation de la valeur-->
-    <!-- Templates -->
-    
-    <!--Création de mise en page-->
-    <!-- Accueil -->
-    <script src="ressources/js/index.js" type="module"></script>
-    <!--Liaison avec le json et Insertion de la page-->
-    <script src="ressources/js/filtres.js"></script>
-
+    <script src="./ressources/scripts/index.js"></script>
   </body>
 </html>

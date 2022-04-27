@@ -71,7 +71,7 @@
       "likes": 62,
       "date": "2011-12-08",
       "price": 55,
-      "description": "Fashion Yellow Beach"
+      "alt": "femme habillée en jaune posant devant un terrain de basket en plein air"
     },
     {
       "id": 8520927,
@@ -82,7 +82,7 @@
       "likes": 11,
       "date": "2011-11-06",
       "price": 55,
-      "description": "Fashion Urban Jungle"
+      "alt": "femme habillée en vert posant sur un pont routier"
     },
     {
       "id": 9025895,
@@ -93,18 +93,18 @@
       "likes": 72,
       "date": "2013-08-12",
       "price": 55,
-      "description": "Fashion Pattern on a Pattern"
+      "alt": "femme habillée en tenue rayée posant devant un mur en damier"
     },
     {
       "id": 9275938,
       "photographerId": 82,
       "title": "Wedding Gazebo",
-      "image": "Event_WeddingGazebo.jpg",
+      "image": "Event-_WeddingGazebo.jpg",
       "tags": ["events"],
       "likes": 69,
       "date": "2018-02-22",
       "price": 55,
-      "description": "Wedding Gazebo"
+      "alt": "portique de jardin décorée pour un mariage"
     },
     {
       "id": 2053494,
@@ -115,7 +115,7 @@
       "likes": 2,
       "date": "2020-05-25",
       "price": 55,
-      "description": "Sparkles"
+      "alt": "soirée de mariage, avec des feux de bengale dans la pénombre"
     },
     {
       "id": 7324238,
@@ -126,7 +126,7 @@
       "likes": 33,
       "date": "2019-06-12",
       "price": 55,
-      "description": "18th Anniversary"
+      "alt": "table de restaurant pour un 18ème anniversaire"
     },
     {
       "id": 8328953,
@@ -137,7 +137,7 @@
       "likes": 24,
       "date": "2011-12-08",
       "price": 100,
-      "description": "Wooden Horse Sculpture"
+      "alt": "sculpture en bois d'un cheval"
     },
     {
       "id": 7502053,
@@ -148,7 +148,7 @@
       "likes": 88,
       "date": "2007-05-07",
       "price": 55,
-      "description": "Triangle Man"
+      "alt": "peinture murale d'un homme et d'un triangle"
     },
     {
       "id": 8523492,
@@ -159,7 +159,7 @@
       "likes": 24,
       "date": "2018-05-05",
       "price": 55,
-      "description": "Purple Tunnel"
+      "alt": "passage sous-terrain carrelé avec de nombreux graffitis"
     },
     {
       "id": 75902334,
@@ -170,9 +170,8 @@
       "likes": 75,
       "date": "2019-11-25",
       "price": 55,
-      "description": "Art Mine"
+      "alt": "peinture murale composée d'un assemblage graphique de têtes de pigeons rouges ou bleues"
     },
-
     {
       "id": 73852953,
       "photographerId": 925,
@@ -182,7 +181,7 @@
       "likes": 52,
       "date": "2013-02-30",
       "price": 70,
-      "description": "8 Rows"
+      "alt": "vue très contrastée de 8 barreurs dans leur aviron"
     },
     {
       "id": 92758372,
@@ -193,7 +192,7 @@
       "likes": 58,
       "date": "2018-07-17",
       "price": 70,
-      "description": "Fashion Wings"
+      "alt": "couple exécutant une figure de danse contemporaine"
     },
     {
       "id": 32958383,
@@ -204,7 +203,7 @@
       "likes": 11,
       "date": "2019-08-12",
       "price": 70,
-      "description": "Melody Red on Stripes"
+      "alt": "femme habillée en robe rouge descendant un escalier de rue"
     },
     {
       "id": 928587383,
@@ -215,7 +214,7 @@
       "likes": 2,
       "date": "2019-01-02",
       "price": 70,
-      "description": "Venture Conference"
+      "alt": "réunion de travail et de partage d'idées"
     },
     {
       "id": 725639493,
@@ -226,7 +225,7 @@
       "likes": 3,
       "date": "2019-05-20",
       "price": 70,
-      "description": "Product Pitch"
+      "alt": "présentation orale d'un projet professionnel"
     },
     {
       "id": 23394384,
@@ -237,7 +236,7 @@
       "likes": 52,
       "date": "2019-07-18",
       "price": 70,
-      "description": "Musical Festival Keyboard"
+      "alt": "artiste féminine derrière son synthétiseur pendant un festival"
     },
     {
       "id": 87367293,
@@ -248,7 +247,7 @@
       "likes": 23,
       "date": "2018-02-22",
       "price": 70,
-      "description": "Musical Festival Singer"
+      "alt": "chanteuse sur la scène d'un festival"
     },
     {
       "id": 593834784,
@@ -259,7 +258,7 @@
       "likes": 52,
       "date": "2017-03-13",
       "price": 70,
-      "description": "Animal Majesty"
+      "alt": "un cerf dans la nature"
     },
     {
       "id": 83958935,
@@ -270,9 +269,8 @@
       "likes": 52,
       "date": "2016-06-12",
       "price": 70,
-      "description": "Cute Puppy on Sunset"
+      "alt": "un chiot trop mignon jouant sur une plage au soleil levant"
     },
-
     {
       "id": 394583434,
       "photographerId": 527,
@@ -282,7 +280,7 @@
       "likes": 23,
       "date": "2017-03-18",
       "price": 45,
-      "description": "Rock Mountains"
+      "alt": "flancs acérés d'un massif montagneux"
     },
     {
       "id": 343423425,
@@ -293,7 +291,7 @@
       "likes": 101,
       "date": "2017-04-03",
       "price": 45,
-      "description": "Outdoor Baths"
+      "alt": "baigneurs dans une source chaude en plein air"
     },
     {
       "id": 73434243,
@@ -304,7 +302,7 @@
       "likes": 99,
       "date": "2018-04-30",
       "price": 45,
-      "description": "Road into the Hill"
+      "alt": "une route sinueuse traversant les collines"
     },
     {
       "id": 23425523,
@@ -315,7 +313,7 @@
       "likes": 34,
       "date": "2016-04-05",
       "price": 45,
-      "description": "Bridge into the Forest"
+      "alt": "un pont de métal dans la forêt"
     },
     {
       "id": 23134513,
@@ -326,7 +324,7 @@
       "likes": 23,
       "date": "2017-03-18",
       "price": 45,
-      "description": "Boat Wonderer"
+      "alt": "depuis une barque en bois sur un lac de montage"
     },
     {
       "id": 92352352,
@@ -337,7 +335,7 @@
       "likes": 66,
       "date": "2018-05-24",
       "price": 45,
-      "description": "Portrait Sunkiss"
+      "alt": "portrait d'une femme rousse qui sourit"
     },
     {
       "id": 34513453,
@@ -348,7 +346,7 @@
       "likes": 52,
       "date": "2017-04-21",
       "price": 45,
-      "description": "Shaw Potrait"
+      "alt": "portrait d'un homme en noir et blanc, trés contrasté"
     },
     {
       "id": 23523533,
@@ -359,7 +357,7 @@
       "likes": 95,
       "date": "2018-11-02",
       "price": 45,
-      "description": "Alexandra"
+      "alt": "portrait d'une femme, en noir et blanc, faible contraste"
     },
     {
       "id": 525834234,
@@ -370,9 +368,8 @@
       "likes": 25,
       "date": "2019-01-02",
       "price": 45,
-      "description": "Afternoon Break"
+      "alt": "portrait noir et blanc d'un homme fumant une cigarette"
     },
-
     {
       "id": 623534343,
       "photographerId": 243,
@@ -382,7 +379,7 @@
       "likes": 88,
       "date": "2019-02-03",
       "price": 45,
-      "description": "Lonesome"
+      "alt": "un promeneur seul au milieu des collines"
     },
     {
       "id": 625025343,
@@ -393,7 +390,7 @@
       "likes": 85,
       "date": "2019-04-03",
       "price": 45,
-      "description": "Hillside Color"
+      "alt": "ville colorée à flanc de falaises, au bord de la mer"
     },
     {
       "id": 2525345343,
@@ -404,7 +401,7 @@
       "likes": 34,
       "date": "2019-04-07",
       "price": 45,
-      "description": "Wednesday Potrait"
+      "alt": "portrait noir et blanc d'une fillette dans une rue"
     },
     {
       "id": 2523434634,
@@ -415,7 +412,7 @@
       "likes": 63,
       "date": "2019-04-07",
       "price": 45,
-      "description": "Nora Portrait"
+      "alt": "portrait d'une jeune femme à lunettes"
     },
     {
       "id": 398847109,
@@ -426,7 +423,7 @@
       "likes": 55,
       "date": "2019-06-20",
       "price": 45,
-      "description": "Raw Black Portrait"
+      "alt": "portrait noir et blanc d'une jeune femme"
     },
     {
       "id": 2534342,
@@ -437,7 +434,7 @@
       "likes": 25,
       "date": "2019-06-21",
       "price": 45,
-      "description": "Seaside Wedding"
+      "alt": "table de mariage sur la plage"
     },
     {
       "id": 65235234,
@@ -448,7 +445,7 @@
       "likes": 52,
       "date": "2019-06-25",
       "price": 45,
-      "description": "Boulder Wedding"
+      "alt": "les mariés entourés de rochers"
     },
     {
       "id": 23523434,
@@ -459,7 +456,7 @@
       "likes": 77,
       "date": "2019-06-28",
       "price": 45,
-      "description": "Benevides Wedding"
+      "alt": "un couple marié au coeur de leur décoration d'extérieur"
     },
     {
       "id": 5234343,
@@ -470,7 +467,7 @@
       "likes": 142,
       "date": "2019-08-23",
       "price": 60,
-      "description": "Wild Horses in the Mountains"
+      "alt": "troupeau de chevaux en montage"
     },
     {
       "id": 95234343,
@@ -481,9 +478,8 @@
       "likes": 59,
       "date": "2019-07-02",
       "price": 60,
-      "description": "Rainbow Bird"
+      "alt": "un oiseau couleur arc en ciel"
     },
-
     {
       "id": 52343416,
       "photographerId": 195,
@@ -493,7 +489,7 @@
       "likes": 25,
       "date": "2019-04-03",
       "price": 60,
-      "description": "Japanese Tower, Kyoto"
+      "alt": "palais traditionnel japonnais à Kyoto"
     },
     {
       "id": 2523434,
@@ -504,7 +500,7 @@
       "likes": 53,
       "date": "2019-05-06",
       "price": 60,
-      "description": "Senset on Canals, Venice"
+      "alt": "coucher de soleil sur un canal de Venise"
     },
     {
       "id": 95293534,
@@ -515,7 +511,7 @@
       "likes": 33,
       "date": "2019-05-12",
       "price": 60,
-      "description": "Mountain and Lake"
+      "alt": "reflet de la montagne dans le lac"
     },
     {
       "id": 356234343,
@@ -526,7 +522,7 @@
       "likes": 53,
       "date": "2019-06-20",
       "price": 60,
-      "description": "City Bike and Stair, Paris"
+      "alt": "rue parisienne, vélo, lampadaire et escalier"
     },
     {
       "id": 235234343,
@@ -537,7 +533,7 @@
       "likes": 63,
       "date": "2019-06-26",
       "price": 60,
-      "description": "Adventure Door, India"
+      "alt": "porte traditionnelle en Inde"
     },
     {
       "id": 6234234343,
@@ -548,7 +544,7 @@
       "likes": 52,
       "date": "2019-06-30",
       "price": 60,
-      "description": "Contrast, St Petersburg"
+      "alt": "zoom sur l'architecture des toits de St Petersbourg"
     },
     {
       "id": 6525666253,
@@ -559,7 +555,7 @@
       "likes": 63,
       "date": "2019-07-20",
       "price": 60,
-      "description": "On a Hill, Tibet"
+      "alt": "village recouvrant un colline au tibet"
     },
     {
       "id": 98252523433,
@@ -570,7 +566,7 @@
       "likes": 88,
       "date": "2020-01-05",
       "price": 60,
-      "description": "Leaning Tower, Pisa"
+      "alt": "zoom sur la tour de Pise"
     },
     {
       "id": 9259398453,
@@ -581,7 +577,7 @@
       "likes": 57,
       "date": "2020-01-20",
       "price": 65,
-      "description": "Circle Highways, Buenos Aires"
+      "alt": "vue aérienne d'une autoroute à Buenos Aires"
     },
     {
       "id": 3523523534,
@@ -592,9 +588,8 @@
       "likes": 54,
       "date": "2020-05-05",
       "price": 60,
-      "description": "Corner Building and Blue Sky"
+      "alt": "zoom sur le haut d'un immeuble traditionnel, sur fond de ciel bleu"
     },
-
     {
       "id": 952343423,
       "photographerId": 930,
@@ -604,7 +599,7 @@
       "likes": 150,
       "date": "2018-02-30",
       "price": 70,
-      "description": "Tricks in the Air"
+      "alt": "gymnaste suspendu par une main"
     },
     {
       "id": 235234343,
@@ -615,7 +610,7 @@
       "likes": 101,
       "date": "2018-03-05",
       "price": 65,
-      "description": "Climber"
+      "alt": "femme escaladant un rocher"
     },
     {
       "id": 235343222,
@@ -626,7 +621,7 @@
       "likes": 103,
       "date": "2018-03-10",
       "price": 70,
-      "description": "Surfer"
+      "alt": "surfeur au coeur d'un rouleau"
     },
     {
       "id": 7775342343,
@@ -637,7 +632,7 @@
       "likes": 77,
       "date": "2018-04-16",
       "price": 50,
-      "description": "Skier"
+      "alt": "skieur exécutant figure de saut"
     },
     {
       "id": 9253445784,
@@ -648,7 +643,7 @@
       "likes": 88,
       "date": "2018-04-22",
       "price": 65,
-      "description": "Race End"
+      "alt": "course féminine d'athlétisme"
     },
     {
       "id": 22299394,
@@ -659,7 +654,7 @@
       "likes": 95,
       "date": "2018-04-27",
       "price": 70,
-      "description": "Jump!"
+      "alt": "skateur exécutant une figure aérienne"
     },
     {
       "id": 3452342633,
@@ -670,7 +665,7 @@
       "likes": 52,
       "date": "2018-05-03",
       "price": 75,
-      "description": "White Light"
+      "alt": "architecture intérieure en contre-plongée, faible contraste"
     },
     {
       "id": 939234243,
@@ -681,7 +676,7 @@
       "likes": 55,
       "date": "2018-05-10",
       "price": 72,
-      "description": "Water on Modern Building"
+      "alt": "architecture se mariant avec une étendue d'eau"
     },
     {
       "id": 222959233,
@@ -692,7 +687,7 @@
       "likes": 85,
       "date": "2018-05-15",
       "price": 71,
-      "description": "Horseshoe"
+      "alt": "architecture ressemblant à un fer à cheval"
     },
     {
       "id": 965933434,
@@ -703,7 +698,7 @@
       "likes": 66,
       "date": "2018-05-20",
       "price": 58,
-      "description": "Cross Bar"
+      "alt": "architecture d'immeubles laissant entrevoir une croix de ciel"
     },
     {
       "id": 777723343,
@@ -714,7 +709,7 @@
       "likes": 79,
       "date": "2018-05-21",
       "price": 80,
-      "description": "Connected Curves"
+      "alt": "architecture d'immeubles en courbes"
     }
   ]
 }

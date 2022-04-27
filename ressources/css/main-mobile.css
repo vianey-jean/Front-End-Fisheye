@@ -1,0 +1,75 @@
+body {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 100%;
+  font-style: normal;
+  background-color: #fff;
+  margin: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+header {
+  height: 140px;
+}
+header .container {
+  width: 45%;
+}
+header .container .logo-1 {
+  width: 140px;
+  top: 20px;
+  left: 6%;
+}
+header .container .logo-2 {
+  width: 140px;
+  top: 20px;
+  left: 6%;
+}
+header .tags {
+  top: 75px;
+}
+header .tags__liste .tag {
+  font-size: 0.65em;
+}
+
+#main {
+  padding-top: 140px;
+}
+#main h1 {
+  font-size: 0.9em;
+  top: 28px;
+  margin-right: 6%;
+}
+#main .photographers {
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+#main .photographers .photographer {
+  width: 100%;
+  min-width: 300px;
+  padding: 6%;
+}
+#main .photographers .photographer__card {
+  padding: 0;
+}
+#main .photographers .photographer__card__img {
+  width: 190px;
+  height: 190px;
+}
+#main .photographers .photographer__card__name {
+  font-size: 2em;
+}
+#main .photographers .photographer__legend {
+  padding: 0;
+}
+#main .photographers .photographer__legend__tags__tag {
+  font-size: 0.7em;
+}
