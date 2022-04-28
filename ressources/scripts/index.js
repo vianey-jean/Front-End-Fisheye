@@ -12,7 +12,6 @@ const fetchData = async () => {
 const getPhotographersData = async () => {
   const data = await fetchData();
   return data.photographers;
-  S;
 };
 
 // function to create tags list with json data
