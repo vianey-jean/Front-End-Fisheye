@@ -5,7 +5,7 @@ this.getContactForm = (person) => {
   const formContent = document.getElementById("content");
   const closeBtn = document.getElementById("closeForm");
   const photographerContactName = document.getElementById(
-    "contactForm-photographer-name"
+    "nomContactPhotographe"
   );
   const formulaire = document.getElementById("form");
   const sendConfirm = document.getElementById("confirm");

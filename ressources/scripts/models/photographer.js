@@ -1,11 +1,11 @@
 // Dom elements
-const btnVue = document.getElementById("btn-vue");
-const btnSelectMenu = document.getElementById("btn-select-menu");
-const btnNotExpanded = document.querySelector(".profil__menu__btn");
-const btnMenuInactive = document.getElementById("btn-inactive");
-let option1Btn = document.querySelector(".profil__menu__btn2__option-1-vue");
-let option2Btn = document.querySelector(".profil__menu__btn2__option-2");
-let option3Btn = document.querySelector(".profil__menu__btn2__option-3");
+const btnVue = document.getElementById("btnVue");
+const btnSelectMenu = document.getElementById("btnSelectionMenu");
+const btnNotExpanded = document.querySelector(".btnClassMenuProfil");
+const btnMenuInactive = document.getElementById("btnInactive");
+let option1Btn = document.querySelector(".btnClassMenuProfil2__option-1-vue");
+let option2Btn = document.querySelector(".btnClassMenuProfil2__option-2");
+let option3Btn = document.querySelector(".btnClassMenuProfil2__option-3");
 
 // variables
 let surname = "";
@@ -156,7 +156,7 @@ const getPhotographerprofil = (mediasArray, photographerName) => {
 // fonction pour l'ordre des médias et les médias  likes
 const getPhotographerMedias = (medias, photographerIdentity) => {
   // dom elements and variables
-  const totalLikesFooter = document.querySelector(".footer__infos__cunt");
+  const totalLikesFooter = document.querySelector(".totalLikeFooter");
   const likeZones = document.getElementsByClassName(
     "profil__content__card__legend__like"
   );

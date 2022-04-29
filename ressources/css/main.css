@@ -66,7 +66,7 @@ header .container .logo-2 {
   z-index: 2;
   opacity: 0;
 }
-header .shortcut {
+header .racourci {
   position: absolute;
   font-size: 1.125em;
   font-weight: 700;
@@ -79,7 +79,7 @@ header .shortcut {
   top: -200px;
   display: block;
 }
-header .shortcut:hover, header .shortcut:focus {
+header .racourci:hover, header .racourci:focus {
   color: #fff;
   background-color: #901c1c;
   top: 20px;
@@ -92,7 +92,7 @@ header .tags {
   margin: 0 25% 0 21.5%;
   padding: 0;
 }
-header .tags__liste {
+header .classTagsListe {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -102,11 +102,11 @@ header .tags__liste {
   height: fit-content;
   outline: none;
 }
-header .tags__liste:focus, header .tags__liste:active {
+header .classTagsListe:focus, header .classTagsListe:active {
   border-radius: 15px;
   border-bottom: 1px solid #d3573c;
 }
-header .tags__liste .tag {
+header .classTagsListe .tag {
   font-size: 0.75em;
   font-weight: 500;
   color: #901c1c;
@@ -116,7 +116,7 @@ header .tags__liste .tag {
   margin: 3px;
   cursor: pointer;
 }
-header .tags__liste .tag:hover, header .tags__liste .tag:focus {
+header .classTagsListe .tag:hover, header .classTagsListe .tag:focus {
   color: #fff;
   background-color: #901c1c;
 }

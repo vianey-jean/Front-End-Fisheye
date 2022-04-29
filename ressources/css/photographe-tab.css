@@ -89,7 +89,7 @@ header .container .logo-2 {
 #main .photographer__container__img:focus, #main .photographer__container__img:active {
   box-shadow: 4px 4px 8px #c4c4c4;
 }
-#main .profil__menu {
+#main .classMenuProfil {
   display: none;
 }
 #main .profil__content__card__media:focus {
@@ -103,65 +103,65 @@ header .container .logo-2 {
   font-size: 1.5em;
 }
 
-.lightbox__content {
+.lightboxContent {
   width: 94%;
 }
-.lightbox__content__container__media__insert:focus {
+.lightboxContent__container__media__insert:focus {
   border: none;
 }
-.lightbox__content__container__media__title {
+.lightboxContent__container__media__title {
   font-size: 1.4em;
 }
-.lightbox__content__container__media__title:focus, .lightbox__content__container__media__title:active {
+.lightboxContent__container__media__title:focus, .lightboxContent__container__media__title:active {
   font-weight: 400;
   outline: none;
 }
-.lightbox__content__icon__close {
+.lightboxContentIconFermeture {
   font-size: 35px;
   top: 20px;
 }
-.lightbox__content__icon--right, .lightbox__content__icon--left {
+.lightboxContentIcon--right, .lightboxContentIcon--left {
   font-size: 35px;
 }
 
-.contact__content {
+.contactContent {
   width: 75%;
 }
-.contact__content__title {
+.contactContentTitre {
   font-size: 2.75em;
 }
-.contact__content__title:focus, .contact__content__title:active {
+.contactContentTitre:focus, .contactContentTitre:active {
   color: #000;
 }
-.contact__content__close {
+.contactContentFermeture {
   font-size: 3em;
   top: 12px;
 }
-.contact__content__body__form__data__label {
+.contactContentBodyData__label {
   font-size: 1.5em;
 }
-.contact__content__body__form__data__label:focus, .contact__content__body__form__data__label:active {
+.contactContentBodyData__label:focus, .contactContentBodyData__label:active {
   color: #525252;
   outline: none;
 }
-.contact__content__body__form__data__control {
+.contactContentBodyData__control {
   font-size: 1.35em;
 }
-.contact__content__body__form__data__control:focus, .contact__content__body__form__data__control:active {
+.contactContentBodyData__control:focus, .contactContentBodyData__control:active {
   outline: none;
   border: none;
   color: #000;
 }
-.contact__content__body__form__data__error__first {
+.contactContentNomErreur {
   top: 9px;
 }
-.contact__content__body__form__data__error__last {
+.contactContentPrenomErreur {
   top: 9px;
 }
-.contact__content__body__form__data__error__email {
+.contactContentEmailErreur {
   top: 9px;
 }
-.contact__content__body__form__data__error__message {
+.contactContentMsgErreur {
   top: 9px;
 }
 

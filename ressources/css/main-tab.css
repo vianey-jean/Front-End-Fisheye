@@ -31,7 +31,7 @@ header .container .logo-2 {
   left: 8%;
   position: absolute;
 }
-header .shortcut {
+header .racourci {
   display: none;
 }
 header .tags {
@@ -41,11 +41,11 @@ header .tags {
   top: 100px;
   margin: 0;
 }
-header .tags__liste {
+header .classTagsListe {
   flex-wrap: wrap;
   margin: 0 7%;
 }
-header .tags__liste:focus, header .tags__liste:active {
+header .classTagsListe:focus, header .classTagsListe:active {
   border-radius: 0;
   border: none;
 }

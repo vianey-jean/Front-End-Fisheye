@@ -72,7 +72,7 @@ header .container .logo-2 {
   z-index: 2;
   opacity: 0;
 }
-header .shortcut {
+header .racourci {
   position: absolute;
   font-size: 1.125em;
   font-weight: 700;
@@ -85,7 +85,7 @@ header .shortcut {
   top: -200px;
   display: block;
 }
-header .shortcut:hover, header .shortcut:focus {
+header .racourci:hover, header .racourci:focus {
   color: #fff;
   background-color: #901c1c;
   top: 20px;
@@ -98,7 +98,7 @@ header .tags {
   margin: 0 25% 0 21.5%;
   padding: 0;
 }
-header .tags__liste {
+header .classTagsListe {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -108,11 +108,11 @@ header .tags__liste {
   height: fit-content;
   outline: none;
 }
-header .tags__liste:focus, header .tags__liste:active {
+header .classTagsListe:focus, header .classTagsListe:active {
   border-radius: 15px;
   border-bottom: 1px solid #d3573c;
 }
-header .tags__liste .tag {
+header .classTagsListe .tag {
   font-size: 0.75em;
   font-weight: 500;
   color: #901c1c;
@@ -122,7 +122,7 @@ header .tags__liste .tag {
   margin: 3px;
   cursor: pointer;
 }
-header .tags__liste .tag:hover, header .tags__liste .tag:focus {
+header .classTagsListe .tag:hover, header .classTagsListe .tag:focus {
   color: #fff;
   background-color: #901c1c;
 }
@@ -298,7 +298,7 @@ header .container .logo-2 {
   width: 100%;
   margin-top: 30px;
 }
-#main .profil__menu {
+#main .classMenuProfil {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -308,28 +308,28 @@ header .container .logo-2 {
   width: 270px;
   line-height: 69px;
 }
-#main .profil__menu__title {
+#main .titreClassMenuProfil {
   box-sizing: border-box;
   margin: 0 15px 0 0;
   font-size: 1.125em;
   font-weight: 700;
 }
-#main .profil__menu__title:focus {
+#main .titreClassMenuProfil:focus {
   color: #901c1c;
   font-size: 1.25em;
   outline: none;
 }
-#main .profil__menu__btn {
+#main .btnClassMenuProfil {
   position: relative;
   cursor: pointer;
 }
-#main .profil__menu__btn:hover #btn-select-menu {
+#main .btnClassMenuProfil:hover #btnSelectionMenu {
   display: flex;
 }
-#main .profil__menu__btn:hover #btn-inactive {
+#main .btnClassMenuProfil:hover #btnInactive {
   box-shadow: none;
 }
-#main .profil__menu__btn1 {
+#main .btnClassMenuProfil1 {
   border: none;
   display: flex;
   flex-direction: row;
@@ -348,18 +348,18 @@ header .container .logo-2 {
   font-size: 1.125em;
   font-weight: 700;
 }
-#main .profil__menu__btn1:focus {
+#main .btnClassMenuProfil1:focus {
   border: none;
   outline: none;
   background-color: #db8876;
 }
-#main .profil__menu__btn1:active #btn-select-menu {
+#main .btnClassMenuProfil1:active #btnSelectionMenu {
   display: flex;
 }
-#main .profil__menu__btn1:active #btn-inactive {
+#main .btnClassMenuProfil1:active #btnInactive {
   box-shadow: none;
 }
-#main .profil__menu__btn2 {
+#main .btnClassMenuProfil2 {
   position: absolute;
   top: 0;
   border: none;
@@ -379,10 +379,10 @@ header .container .logo-2 {
   font-weight: 700;
   z-index: 1;
 }
-#main .profil__menu__btn2:focus {
+#main .btnClassMenuProfil2:focus {
   display: flex;
 }
-#main .profil__menu__btn2__option-1 {
+#main .btnClassMenuProfil2__option-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -396,7 +396,7 @@ header .container .logo-2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-#main .profil__menu__btn2__option-1-vue {
+#main .btnClassMenuProfil2__option-1-vue {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: flex;
@@ -404,18 +404,18 @@ header .container .logo-2 {
   margin: 0;
   font-weight: 700;
 }
-#main .profil__menu__btn2__option-1-vue:hover, #main .profil__menu__btn2__option-1-vue:focus {
+#main .btnClassMenuProfil2__option-1-vue:hover, #main .btnClassMenuProfil2__option-1-vue:focus {
   outline: none;
   color: #fff;
 }
-#main .profil__menu__btn2__option-1-icon {
+#main .btnClassMenuProfil2__option-1-icon {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: flex;
   font-weight: 700;
   color: #fff;
 }
-#main .profil__menu__btn2__option-2, #main .profil__menu__btn2__option-3 {
+#main .btnClassMenuProfil2__option-2, #main .btnClassMenuProfil2__option-3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-weight: 700;
@@ -428,7 +428,7 @@ header .container .logo-2 {
   margin: 0;
   border-top: 1.5px solid #fff;
 }
-#main .profil__menu__btn2__option-2:hover, #main .profil__menu__btn2__option-2:focus, #main .profil__menu__btn2__option-3:hover, #main .profil__menu__btn2__option-3:focus {
+#main .btnClassMenuProfil2__option-2:hover, #main .btnClassMenuProfil2__option-2:focus, #main .btnClassMenuProfil2__option-3:hover, #main .btnClassMenuProfil2__option-3:focus {
   outline: none;
   color: #fff;
 }
@@ -554,7 +554,7 @@ header .container .logo-2 {
   border: none;
   outline: none;
 }
-.lightbox__content {
+.lightboxContent {
   width: 92%;
   height: 100%;
   display: flex;
@@ -565,11 +565,11 @@ header .container .logo-2 {
   box-sizing: border-box;
   overflow: hidden;
 }
-.lightbox__content:focus, .lightbox__content:hover, .lightbox__content:active {
+.lightboxContent:focus, .lightboxContent:hover, .lightboxContent:active {
   border: none;
   outline: none;
 }
-.lightbox__content__container {
+.lightboxContent__container {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -581,11 +581,11 @@ header .container .logo-2 {
   padding: 20px 0 40px 0;
   position: relative;
 }
-.lightbox__content__container:focus, .lightbox__content__container:hover, .lightbox__content__container:active {
+.lightboxContent__container:focus, .lightboxContent__container:hover, .lightboxContent__container:active {
   border: none;
   outline: none;
 }
-.lightbox__content__container__media {
+.lightboxContent__container__media {
   width: fit-content;
   max-width: 100%;
   box-sizing: border-box;
@@ -595,11 +595,11 @@ header .container .logo-2 {
   justify-content: center;
   align-items: center;
 }
-.lightbox__content__container__media:focus, .lightbox__content__container__media:hover, .lightbox__content__container__media:active {
+.lightboxContent__container__media:focus, .lightboxContent__container__media:hover, .lightboxContent__container__media:active {
   border: none;
   outline: none;
 }
-.lightbox__content__container__media__insert {
+.lightboxContent__container__media__insert {
   margin: 0 0 10px 0;
   box-sizing: border-box;
   width: fit-content;
@@ -609,11 +609,11 @@ header .container .logo-2 {
   object-fit: scale-down;
   position: relative;
 }
-.lightbox__content__container__media__insert:focus {
+.lightboxContent__container__media__insert:focus {
   border: 1px solid #901c1c;
   outline: none;
 }
-.lightbox__content__container__media__title {
+.lightboxContent__container__media__title {
   position: absolute;
   bottom: 20px;
   left: 5%;
@@ -624,11 +624,11 @@ header .container .logo-2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-.lightbox__content__container__media__title:focus, .lightbox__content__container__media__title:active {
+.lightboxContent__container__media__title:focus, .lightboxContent__container__media__title:active {
   font-weight: 700;
   outline: none;
 }
-.lightbox__content__icon__close {
+.lightboxContentIconFermeture {
   box-sizing: border-box;
   font-size: 45px;
   color: #901c1c;
@@ -637,17 +637,17 @@ header .container .logo-2 {
   right: 0;
   top: 40px;
 }
-.lightbox__content__icon__close:hover, .lightbox__content__icon__close:focus, .lightbox__content__icon__close:active {
+.lightboxContentIconFermeture:hover, .lightboxContentIconFermeture:focus, .lightboxContentIconFermeture:active {
   outline: none;
   border: none;
   color: #d3573c;
 }
-.lightbox__content__icon--right, .lightbox__content__icon--left {
+.lightboxContentIcon--right, .lightboxContentIcon--left {
   font-size: 45px;
   color: #901c1c;
   cursor: pointer;
 }
-.lightbox__content__icon--right:hover, .lightbox__content__icon--right:focus, .lightbox__content__icon--right:active, .lightbox__content__icon--left:hover, .lightbox__content__icon--left:focus, .lightbox__content__icon--left:active {
+.lightboxContentIcon--right:hover, .lightboxContentIcon--right:focus, .lightboxContentIcon--right:active, .lightboxContentIcon--left:hover, .lightboxContentIcon--left:focus, .lightboxContentIcon--left:active {
   outline: none;
   border: none;
   color: #d3573c;
@@ -678,7 +678,7 @@ header .container .logo-2 {
   text-align : right;
   color: #901c1c;
 }
-.contact__content {
+.contactContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -692,7 +692,7 @@ header .container .logo-2 {
   margin: auto;
   background-color: #db8876;
 }
-.contact__content__title {
+.contactContentTitre {
   align-content: center;
   box-sizing: border-box;
   width: 80%;
@@ -702,11 +702,11 @@ header .container .logo-2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-.contact__content__title:focus, .contact__content__title:active {
+.contactContentTitre:focus, .contactContentTitre:active {
   color: #fff;
   outline: none;
 }
-.contact__content__close {
+.contactContentFermeture {
   font-size: 3.5em;
   position: absolute;
   cursor: pointer;
@@ -714,11 +714,11 @@ header .container .logo-2 {
   right: 20px;
   color: #fff;
 }
-.contact__content__close:hover, .contact__content__close:focus, .contact__content__close:active {
+.contactContentFermeture:hover, .contactContentFermeture:focus, .contactContentFermeture:active {
   color: #000;
   outline: none;
 }
-.contact__content__body {
+.contactContentBody {
   box-sizing: border-box;
   font-size: 1em;
   color: #525252;
@@ -726,27 +726,27 @@ header .container .logo-2 {
   width: 100%;
   height: 100%;
 }
-.contact__content__body__form {
+.contactContentBody__form {
   width: 100%;
   margin: 0;
 }
-.contact__content__body__form__data {
+.contactContentBodyData {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 7px;
   position: relative;
 }
-.contact__content__body__form__data__label {
+.contactContentBodyData__label {
   font-size: 1.7em;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-.contact__content__body__form__data__label:focus, .contact__content__body__form__data__label:active {
+.contactContentBodyData__label:focus, .contactContentBodyData__label:active {
   color: #000;
   outline: none;
 }
-.contact__content__body__form__data__control {
+.contactContentBodyData__control {
   height: 30px;
   padding: 5px 7px;
   border: none;
@@ -756,23 +756,23 @@ header .container .logo-2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-.contact__content__body__form__data__control::placeholder {
+.contactContentBodyData__control::placeholder {
   font-size: 0.9em;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   color: #525252;
   opacity: 0.5;
 }
-.contact__content__body__form__data__control:focus, .contact__content__body__form__data__control:active {
+.contactContentBodyData__control:focus, .contactContentBodyData__control:active {
   outline: none;
   border: none;
   color: #901c1c;
 }
-.contact__content__body__form__data__control:focus::placeholder, .contact__content__body__form__data__control:active::placeholder {
+.contactContentBodyData__control:focus::placeholder, .contactContentBodyData__control:active::placeholder {
   color: #901c1c;
   opacity: 0.5;
 }
-.contact__content__body__form__data__error__first {
+.contactContentNomErreur {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: none;
@@ -783,7 +783,7 @@ header .container .logo-2 {
   color: #fff;
   font-weight: 500;
 }
-.contact__content__body__form__data__error__last {
+.contactContentPrenomErreur {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: none;
@@ -794,7 +794,7 @@ header .container .logo-2 {
   color: #fff;
   font-weight: 500;
 }
-.contact__content__body__form__data__error__email {
+.contactContentEmailErreur {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: none;
@@ -805,7 +805,7 @@ header .container .logo-2 {
   color: #fff;
   font-weight: 500;
 }
-.contact__content__body__form__data__error__message {
+.contactContentMsgErreur {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: none;
@@ -816,7 +816,7 @@ header .container .logo-2 {
   color: #fff;
   font-weight: 500;
 }
-.contact__content__body__form__submit {
+.contactContentBodyBouton {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -824,7 +824,7 @@ header .container .logo-2 {
   margin: 20px 0 10px 0;
   cursor: pointer;
 }
-.contact__content__body__form__submit__btn {
+.contactContentBodyBouton__btn {
   border: none;
   height: 69px;
   width: 170px;
@@ -838,14 +838,14 @@ header .container .logo-2 {
   box-shadow: 3px 2px 4px #c4c4c4;
   cursor: pointer;
 }
-.contact__content__body__form__submit__btn:focus, .contact__content__body__form__submit__btn:hover, .contact__content__body__form__submit__btn:active {
+.contactContentBodyBouton__btn:focus, .contactContentBodyBouton__btn:hover, .contactContentBodyBouton__btn:active {
   outline: none;
   color: #000;
   background-color: #db8876;
   border: 0.5px solid #c4c4c4;
   box-shadow: 3px 2px 4px #525252;
 }
-.contact__content__body__form__submit__confirm {
+.contactContentConfirme {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   text-align: right;
@@ -856,7 +856,7 @@ header .container .logo-2 {
   font-weight: 700;
   padding-right: 10px;
 }
-.contact__content__body__form__submit__confirm:focus, .contact__content__body__form__submit__confirm:hover, .contact__content__body__form__submit__confirm:active {
+.contactContentConfirme:focus, .contactContentConfirme:hover, .contactContentConfirme:active {
   outline: none;
   border: none;
 }

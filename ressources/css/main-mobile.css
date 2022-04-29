@@ -35,7 +35,7 @@ header .container .logo-2 {
 header .tags {
   top: 75px;
 }
-header .tags__liste .tag {
+header .classTagsListe .tag {
   font-size: 0.65em;
 }
 

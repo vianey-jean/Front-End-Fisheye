@@ -61,53 +61,53 @@
         <!-- insérer l'article du photographe via photographe.js -->
       </section>
       <section class="profil">
-        <div class="profil__menu">
+        <div class="classMenuProfil">
           <p
-            class="profil__menu__title"
+            class="titreClassMenuProfil"
             tabindex="10"
             aria-label="trier par..." >
             Trier par
           </p>
-          <div class="profil__menu__btn">
+          <div class="btnClassMenuProfil">
             <div
-              class="profil__menu__btn1" tabindex="11"
-              id="btn-inactive"
+              class="btnClassMenuProfil1" tabindex="11"
+              id="btnInactive"
               aria-haspopup="listbox"
               aria-label="options de tri des médias"
               aria-expanded="false">
-              <span class="profil__menu__btn1__pop" id="btn-vue"
+              <span class="btnClassMenuProfil1__pop" id="btnVue"
                 >Selection</span
               >
               <span
-                class="profil__menu__btn1__icon fa-solid fa-angle-down"
+                class="btnClassMenuProfil1__icon fa-solid fa-angle-down"
               ></span>
             </div>
             <div
-              class="profil__menu__btn2"
-              id="btn-select-menu"
+              class="btnClassMenuProfil2"
+              id="btnSelectionMenu"
               aria-haspopup="listbox"
               tabindex="0"
               aria-expanded="true">
-              <span class="profil__menu__btn2__option-1">
+              <span class="btnClassMenuProfil2__option-1">
                 <span
-                  class="profil__menu__btn2__option-1-vue"
+                  class="btnClassMenuProfil2__option-1-vue"
                   aria-label="option de tri des médias"
                   tabindex="0"
                   data-option="pop">Popularité</span
                 >
                 <span
-                  class="profil__menu__btn2__option-1-icon fa-solid fa-angle-up"
+                  class="btnClassMenuProfil2__option-1-icon fa-solid fa-angle-up"
                 ></span>
               </span>
               <span
-                class="profil__menu__btn2__option-2"
+                class="btnClassMenuProfil2__option-2"
                 aria-label="option de tri des médias"
                 tabindex="0"
                 data-option="date"
                 >Date</span
               >
               <span
-                class="profil__menu__btn2__option-3"
+                class="btnClassMenuProfil2__option-3"
                 aria-label="option de tri des médias"
                 tabindex="0"
                 data-option="title"
@@ -127,15 +127,15 @@
       tabindex="9"
       aria-label="total des mentions j'aime, et prix par jour"
     >
-      <div class="footer__infos">
+      <div class="infosFooter">
         <span
-          class="footer__infos__cunt"
+          class="totalLikeFooter"
           aria-label="total des mentions j'aime"
         >
           <!-- insérer la chatte via photographe.js -->
         </span>
         <span
-          class="footer__infos__heart fas fa-heart"
+          class="infosFooterLike fas fa-heart"
           aria-label="icone coeur"
         ></span>
       </div>
@@ -150,61 +150,61 @@
     tabindex="1"
     aria-hidden="true"
   >
-    <div class="lightbox__content">
+    <div class="lightboxContent">
       <span
-        class="lightbox__content__icon--left fa-solid fa-angle-left"
+        class="lightboxContentIcon--left fa-solid fa-angle-left"
         aria-label="média précédant"
         tabindex="2"
       ></span>
-      <div class="lightbox__content__container" id="lightbox-container">
+      <div class="lightboxContent__container" id="lightbox-container">
         <!-- insérer lightbox.js -->
       </div>
       <span
-        class="lightbox__content__icon--right fa-solid fa-angle-right"
+        class="lightboxContentIcon--right fa-solid fa-angle-right"
         aria-label="média suivant"
         tabindex="2"
       ></span>
       <div
-        class="lightbox__content__icon__close"
+        class="lightboxContentIconFermeture"
         id="closeBox"
         aria-label="quitter l'affichage plein écran"
         tabindex="2"
       >
-        <span class="lightbox__content__icon__close__icon fas fa-times"></span>
+        <span class="lightboxContentIconFermeture__icon fas fa-times"></span>
       </div>
     </div>
   </div>
 
   <div class="contact" id="contact">
     <div
-      class="contact__content"
+      class="contactContent"
       id="content"
-      aria-labelledby="contactForm-photographer-name"
+      aria-labelledby="nomContactPhotographe"
       tabindex="1"
     >
-      <p class="contact__content__title" id="contactForm-photographer-name">
+      <p class="contactContentTitre" id="nomContactPhotographe">
         <!-- inserer contactForm.js -->
       </p>
-      <div class="contact__content__close" id="closeForm" tabindex="2">
-        <span class="contact__content__close__icon fas fa-times"></span>
+      <div class="contactContentFermeture" id="closeForm" tabindex="2">
+        <span class="contactContentFermeture__icon fas fa-times"></span>
       </div>
-      <div class="contact__content__body">
+      <div class="contactContentBody">
         <form
-          class="contact__content__body__form"
+          class="contactContentBody__form"
           name="user"
           action="photographe.html"
           method="get"
           id="form"
         >
-          <div class="contact__content__body__form__data">
+          <div class="contactContentBodyData">
             <label
-              class="contact__content__body__form__data__label"
+              class="contactContentBodyData__label"
               for="first"
               tabindex="1"
               >Prénom</label
             >
             <input
-              class="contact__content__body__form__data__control"
+              class="contactContentBodyData__control"
               type="text"
               id="first"
               name="first"
@@ -212,22 +212,22 @@
               tabindex="1"
             />
             <span
-              class="contact__content__body__form__data__error__first"
+              class="contactContentNomErreur"
               id="first-error"
               tabindex="1"
               aria-label="saisie du prénom incorrecte"
               >Saisie incorrecte</span
             >
           </div>
-          <div class="contact__content__body__form__data">
+          <div class="contactContentBodyData">
             <label
-              class="contact__content__body__form__data__label"
+              class="contactContentBodyData__label"
               for="last"
               tabindex="1"
               >Nom</label
             >
             <input
-              class="contact__content__body__form__data__control"
+              class="contactContentBodyData__control"
               type="text"
               id="last"
               name="last"
@@ -235,22 +235,22 @@
               tabindex="1"
             />
             <span
-              class="contact__content__body__form__data__error__last"
+              class="contactContentPrenomErreur"
               id="last-error"
               tabindex="1"
               aria-label="saisie du nom incorrecte"
               >Saisie incorrecte</span
             >
           </div>
-          <div class="contact__content__body__form__data">
+          <div class="contactContentBodyData">
             <label
-              class="contact__content__body__form__data__label"
+              class="contactContentBodyData__label"
               for="email"
               tabindex="1"
               >Email</label
             >
             <input
-              class="contact__content__body__form__data__control"
+              class="contactContentBodyData__control"
               type="text"
               id="email"
               name="email"
@@ -258,22 +258,22 @@
               tabindex="1"
             />
             <span
-              class="contact__content__body__form__data__error__email"
+              class="contactContentEmailErreur"
               id="email-error"
               tabindex="1"
               aria-label="saisie de l'adresse mail incorrecte"
               >Saisie incorrecte</span
             >
           </div>
-          <div class="contact__content__body__form__data">
+          <div class="contactContentBodyData">
             <label
-              class="contact__content__body__form__data__label"
+              class="contactContentBodyData__label"
               for="message"
               tabindex="1"
               >Votre message</label
             >
             <textarea
-              class="contact__content__body__form__data__control"
+              class="contactContentBodyData__control"
               id="message"
               name="message"
               maxlength="500"
@@ -285,17 +285,17 @@
             </span>
             <span id="message-max-length">/ 500</span>
             <span
-              class="contact__content__body__form__data__error__message"
+              class="contactContentMsgErreur"
               id="message-error"
               tabindex="1"
               aria-label="votre message est vide"
               >Saisie incorrecte</span
             >
           </div>
-          <div class="contact__content__body__form__submit">
+          <div class="contactContentBodyBouton">
             <input
               id="submit"
-              class="contact__content__body__form__submit__btn"
+              class="contactContentBodyBouton__btn"
               type="submit"
               value="Envoyer"
               tabindex="1"
@@ -303,7 +303,7 @@
               aria-pressed="false"
             />
             <span
-              class="contact__content__body__form__submit__confirm"
+              class="contactContentConfirme"
               id="confirm"
               tabindex="1"
               aria-label="Message envoyé avec succès"
@@ -321,5 +321,6 @@
   <script src="ressources/scripts/models/contactForm.js"></script>
   <script src="ressources/scripts/templates/photographerCard.js"></script>
   <script src="ressources/scripts/factory/photographerProfilFactory.js"></script>
+
   <script src="ressources/scripts/models/photographer.js"></script>
 </html>

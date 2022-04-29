@@ -72,7 +72,7 @@ this.lightboxVue = (medias) => {
       ) {
         event.preventDefault();
         lastMediaId = document
-          .querySelector(".lightbox__content__container__media__insert")
+          .querySelector(".lightboxContent__container__media__insert")
           .getAttribute("data-media-id");
         closeDelay(lastMediaId);
       }
@@ -85,7 +85,7 @@ this.lightboxVue = (medias) => {
       } else if (e.keyCode === 13 || e.keyCode === 32) {
         e.preventDefault();
         lastMediaId = document
-          .querySelector(".lightbox__content__container__media__insert")
+          .querySelector(".lightboxContent__container__media__insert")
           .getAttribute("data-media-id");
         closeDelay(lastMediaId);
       }
@@ -142,7 +142,7 @@ this.lightboxVue = (medias) => {
   closeLightbox.addEventListener("click", (e) => {
     e.preventDefault();
     lastMediaId = document
-      .querySelector(".lightbox__content__container__media__insert")
+      .querySelector(".lightboxContent__container__media__insert")
       .getAttribute("data-media-id");
     closeDelay(lastMediaId);
   });
@@ -166,7 +166,7 @@ this.lightboxVue = (medias) => {
     const newLightboxVue = temp.self.getLightboxVue();
     domPlace.appendChild(newLightboxVue);
     domInsertMediaId = newLightboxVue
-      .querySelector(".lightbox__content__container__media__insert")
+      .querySelector(".lightboxContent__container__media__insert")
       .getAttribute("data-media-id");
     return domInsertMediaId;
   };
