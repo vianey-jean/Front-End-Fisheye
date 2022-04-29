@@ -1,4 +1,4 @@
-// factory of a general photographer card
+// Fabrique d'une carte de photographe généraliste
 this.photographerCardFactory = (photographerCard) => {
   this.getPersonnalCard = () => {
     const photographer = document.createElement("article");
@@ -15,7 +15,7 @@ this.photographerCardFactory = (photographerCard) => {
         <div class="photographer__legend__tags" tabindex="6" aria-label="ses mots-clef, via lequels vous pouvez lancer une recherche"></div>
         `;
 
-    //add tags to photographer card
+    //ajouter des tags à la carte du photographe
     photographerCard.tags.forEach((tag) => {
       const newTag = document.createElement("span");
       newTag.classList.add("photographer__legend__tags__tag");
@@ -28,14 +28,14 @@ this.photographerCardFactory = (photographerCard) => {
         .appendChild(newTag);
     });
 
-    // add profile image to photographer card
+    // ajouter une image de profil à la carte du photographe
     const photographerImg = document.createElement("div");
     photographerImg.classList.add("photographer__container");
     photographerImg.innerHTML = `<img class="photographer__container__img"
          src="ressources/images/Photos/Photographers_ID_Photos/${photographerCard.portrait}" tabindex="8" alt="portrait de ${photographerCard.name}" aria-label="portrait de ${photographerCard.name}"/>`;
     document.getElementById("photographer").appendChild(photographerImg);
 
-    // add photographer price per day at the footer infos
+    // ajouter le prix du photographe par jour dans les infos du pied de page
     const footerPrice = document.createElement("p");
     footerPrice.setAttribute("aria-label", "son prix par jour");
     footerPrice.classList.add("footer__price");

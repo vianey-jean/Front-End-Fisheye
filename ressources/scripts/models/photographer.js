@@ -1,18 +1,18 @@
 // Dom elements
 const btnVue = document.getElementById("btn-vue");
 const btnSelectMenu = document.getElementById("btn-select-menu");
-const btnNotExpanded = document.querySelector(".portfolio__menu__btn");
+const btnNotExpanded = document.querySelector(".profil__menu__btn");
 const btnMenuInactive = document.getElementById("btn-inactive");
-let option1Btn = document.querySelector(".portfolio__menu__btn2__option-1-vue");
-let option2Btn = document.querySelector(".portfolio__menu__btn2__option-2");
-let option3Btn = document.querySelector(".portfolio__menu__btn2__option-3");
+let option1Btn = document.querySelector(".profil__menu__btn2__option-1-vue");
+let option2Btn = document.querySelector(".profil__menu__btn2__option-2");
+let option3Btn = document.querySelector(".profil__menu__btn2__option-3");
 
 // variables
 let surname = "";
 let btnSelected = [];
 btnSelected.push(option1Btn, option2Btn, option3Btn);
 
-// async functions json file data extract
+// fonctions asynchrones extrait de données de fichier json
 const fetchData = async () => {
   const res = await fetch("ressources/data/photographers.json");
   const data = await res.json();
@@ -29,12 +29,12 @@ const getMediasData = async () => {
   return data.media;
 };
 
-// url search id
+// ID de recherche d'URL
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const urlId = urlParams.get("id");
 
-// function to create photographer card with json data and url id
+// fonction pour créer une carte de photographe avec des données json et un identifiant d'url
 const getPhotographerCard = (photographers) => {
   let self = this;
   photographers.forEach((photographer) => {
@@ -44,10 +44,10 @@ const getPhotographerCard = (photographers) => {
       document
         .getElementById("photographer")
         .insertBefore(card, document.getElementById("photographer").firstChild);
-      surname = photographer.name.replace(" ", "_"); // surname for use as directory
+      surname = photographer.name.replace(" ", "_"); // nom de famille à utiliser comme répertoire
       self.getContactForm(photographer);
     }
-    // index header tags function extend to photographer card tag
+    // la fonction de balises d'en-tête d'index s'étend à la balise de carte de photographe
     const personnalTags = document.querySelectorAll(
       ".photographer__legend__tags__tag"
     );
@@ -61,7 +61,7 @@ const getPhotographerCard = (photographers) => {
   });
 };
 
-// function for select btn gestion with click or keyboard
+// fonction pour sélectionner la gestion btn avec clic ou clavier
 const btnSelection = (btnClicked, btnClickAction) => {
   let indexOfSelectedBtn = 0;
 
@@ -99,7 +99,7 @@ const btnSelection = (btnClicked, btnClickAction) => {
   btnNotExpanded.addEventListener("mouseout", (mouseEvent) => {
     mouseEvent.preventDefault();
     mouseEvent.stopPropagation();
-    document.querySelector(".portfolio__content__card__media").focus();
+    document.querySelector(".profil__content__card__media").focus();
     btnSelectMenu.style.display = "none";
     btnMenuInactive.style.boxShadow = "3px 2px 4px v.$shadow";
     indexOfSelectedBtn = 0;
@@ -140,39 +140,39 @@ const btnSelection = (btnClicked, btnClickAction) => {
   });
 };
 
-// function to create each media card with portfolio factory
-const getPhotographerPortfolio = (mediasArray, photographerName) => {
+// fonction pour créer chaque carte média 
+const getPhotographerprofil = (mediasArray, photographerName) => {
   let self = this;
-  document.getElementById("portfolioContent").innerHTML = "";
+  document.getElementById("profilContent").innerHTML = "";
   mediasArray.forEach((media) => {
-    const temp = self.mediaPortfolioFactory(media, photographerName);
+    const temp = self.mediaprofilFactory(media, photographerName);
     const newMediaCard = temp.self.getMediaCard();
-    document.getElementById("portfolioContent").appendChild(newMediaCard);
+    document.getElementById("profilContent").appendChild(newMediaCard);
   });
-  // call lightbox possibility
+  // possibilité d'appel lightbox
   self.lightboxVue(mediasArray);
 };
 
-// function for medias order and medias likes
+// fonction pour l'ordre des médias et les médias  likes
 const getPhotographerMedias = (medias, photographerIdentity) => {
   // dom elements and variables
   const totalLikesFooter = document.querySelector(".footer__infos__cunt");
   const likeZones = document.getElementsByClassName(
-    "portfolio__content__card__legend__like"
+    "profil__content__card__legend__like"
   );
   let btnActive = "";
 
-  // to call medias of the url id photographer
+  // appeler les médias de l'url id photographe
   let photographerMedias = medias.filter(
     (media) => media.photographerId == urlId
   );
-  // to add parameter to each media for likes gestion
+  // pour ajouter des paramètres à chaque média pour la gestion des likes
   let personnalMedias = photographerMedias.map((media) => ({
     ...media,
     liked: "far",
   }));
 
-  // ctrl if local storage of media liked
+  // ctrl si le stockage local des médias a Like
   personnalMedias = personnalMedias.map((media) => {
     if (localStorage.getItem(`${media.id}_heart`) !== null) {
       media.liked = localStorage.getItem(`${media.id}_heart`);
@@ -181,7 +181,7 @@ const getPhotographerMedias = (medias, photographerIdentity) => {
     return media;
   });
 
-  // default order for media (popularity)
+  // ordre par défaut des médias (popularité)
   personnalMedias.sort((a, b) => {
     if (a.likes > b.likes) {
       return -1;
@@ -192,28 +192,28 @@ const getPhotographerMedias = (medias, photographerIdentity) => {
     }
   });
 
-  // call create function for this medias
-  getPhotographerPortfolio(personnalMedias, photographerIdentity);
+  // appeler la fonction de création pour ce média
+  getPhotographerprofil(personnalMedias, photographerIdentity);
 
-  // add total medias likes in footer
+  // ajouter le total des médias dans le pied de page
   totalLikesFooter.innerText = personnalMedias.reduce(
     (likes, media) => likes + media.likes,
     0
   );
 
-  // likes gestion on click and with keyboard
+  // gestion des likes au clic et au clavier
   Array.from(likeZones).forEach((likeZone) => {
     likeZone.addEventListener("click", (e) => {
       const zoneToClick = e.target.classList.contains(
-        "portfolio__content__card__legend__like"
+        "profil__content__card__legend__like"
       )
         ? e.target
-        : e.target.closest(".portfolio__content__card__legend__like");
+        : e.target.closest(".profil__content__card__legend__like");
       const heart = Array.from(zoneToClick.children).find((el) =>
-        el.classList.contains("portfolio__content__card__legend__like__empty")
+        el.classList.contains("profil__content__card__legend__like__empty")
       );
       const likesVue = zoneToClick.querySelector(
-        ".portfolio__content__card__legend__like__cunt"
+        ".profil__content__card__legend__like__cunt"
       );
       const mediaId = zoneToClick.getAttribute("data-like-id");
       personnalMedias = personnalMedias.map((media) => {
@@ -232,7 +232,7 @@ const getPhotographerMedias = (medias, photographerIdentity) => {
             (likes, media) => likes + media.likes,
             0
           );
-          //ADD TO LOCAL STORAGE
+          //AJOUTER AU STOCKAGE LOCAL
           localStorage.setItem(`${media.id}_likes`, `${media.likes}`);
           localStorage.setItem(`${media.id}_heart`, `${media.liked}`);
         }
@@ -248,7 +248,7 @@ const getPhotographerMedias = (medias, photographerIdentity) => {
     });
   });
 
-  // change medias order and custom select button transform
+  // changer l'ordre des médias et transformer le bouton de sélection personnalisé
   btnSelection(btnSelected, (event) => {
     event.preventDefault();
     btnActive = event.target.getAttribute("data-option");
@@ -326,21 +326,21 @@ const getPhotographerMedias = (medias, photographerIdentity) => {
         option3Btn.innerText = "Titre";
         break;
     }
-    // call create function for this medias
-    getPhotographerPortfolio(personnalMedias, photographerIdentity);
-    // likes gestion on click and with keyboard
+    // appeler la fonction de création pour ce média
+    getPhotographerprofil(personnalMedias, photographerIdentity);
+    // gestion des likes au clic et au clavier
     Array.from(likeZones).forEach((likeZone) => {
       likeZone.addEventListener("click", (e) => {
         const zoneToClick = e.target.classList.contains(
-          "portfolio__content__card__legend__like"
+          "profil__content__card__legend__like"
         )
           ? e.target
-          : e.target.closest(".portfolio__content__card__legend__like");
+          : e.target.closest(".profil__content__card__legend__like");
         const heart = Array.from(zoneToClick.children).find((el) =>
-          el.classList.contains("portfolio__content__card__legend__like__empty")
+          el.classList.contains("profil__content__card__legend__like__empty")
         );
         const likesVue = zoneToClick.querySelector(
-          ".portfolio__content__card__legend__like__cunt"
+          ".profil__content__card__legend__like__cunt"
         );
         const mediaId = zoneToClick.getAttribute("data-like-id");
         personnalMedias = personnalMedias.map((media) => {
@@ -355,12 +355,12 @@ const getPhotographerMedias = (medias, photographerIdentity) => {
               heart.setAttribute("data-prefix", "far");
             }
             likesVue.innerHTML = media.likes;
-            // add total medias likes in footer
+            // ajouter le total des médias dans le pied de page
             totalLikesFooter.innerText = personnalMedias.reduce(
               (likes, media) => likes + media.likes,
               0
             );
-            // ADD TO LOCAL STORAGE
+            // AJOUTER AU STOCKAGE LOCAL
             localStorage.setItem(`${media.id}_likes`, `${media.likes}`);
             localStorage.setItem(`${media.id}_heart`, `${media.liked}`);
           }
@@ -378,22 +378,22 @@ const getPhotographerMedias = (medias, photographerIdentity) => {
   });
 };
 
-// await global function
+// attendre la fonction globale
 const init = async () => {
-  //localStorage.clear(); // if needed
+  //localStorage.clear(); // si besoin
   let self = this;
   const photographers = await getPhotographersData();
   const medias = await getMediasData();
-  // call photographer card
+  // appeler la carte du photographe
   getPhotographerCard(photographers);
-  // call keyboard navigation function for tags
+  // appeler la fonction de navigation du clavier pour les balises
   let tagsPhotographerDom = document.querySelector(
     ".photographer__legend__tags"
   );
   tagsPhotographerDom.addEventListener("keydown", (e) => {
     self.enterTagsNav(e, tagsPhotographerDom);
   });
-  // call photographer's medias in popularity order and likes knowns (local storage)
+  // appeler les médias du photographe par ordre de popularité et likes connus (stockage local)
   getPhotographerMedias(medias, surname);
 };
 

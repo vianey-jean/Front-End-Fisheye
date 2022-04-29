@@ -1,4 +1,5 @@
-// factory to insert media video or img in lightbox
+// fabrique pour insérer une vidéo multimédia ou img dans la lightbox
+
 this.lightboxFactory = (lightMedia, directory) => {
   this.getLightboxVue = () => {
     const mediaContainerInLightbox = document.createElement("div");

@@ -1,10 +1,10 @@
-// navigation in tags listes with keyboard
+// navigation dans les listes de balises avec le clavier
 this.enterTagsNav = (e, tagsContainer) => {
   const tags = tagsContainer.querySelectorAll(".tag");
   const firstTag = tags[0];
   const lastTag = tags[tags.length - 1];
 
-  // open tags list and tag gestion
+  // ouvrir la liste des balises et la gestion des balises
   if (e.keyCode === 13 || e.keyCode === 32) {
     e.preventDefault();
     tags.forEach((tag) => {
@@ -18,7 +18,7 @@ this.enterTagsNav = (e, tagsContainer) => {
     });
     firstTag.focus();
 
-    // keep focus in list tags
+    // garder le focus dans les balises de liste
     lastTag.addEventListener("keydown", (event) => {
       if (event.keyCode === 9 && !event.shiftKey) {
         event.preventDefault();
@@ -33,7 +33,7 @@ this.enterTagsNav = (e, tagsContainer) => {
     });
   }
 
-  //  Escape tags list
+  //  Liste des balises d'échappement
   if (e.keyCode === 27 && tagsContainer.contains(document.activeElement)) {
     tagsContainer.focus();
   }

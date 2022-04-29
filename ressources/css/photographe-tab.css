@@ -89,17 +89,17 @@ header .container .logo-2 {
 #main .photographer__container__img:focus, #main .photographer__container__img:active {
   box-shadow: 4px 4px 8px #c4c4c4;
 }
-#main .portfolio__menu {
+#main .profil__menu {
   display: none;
 }
-#main .portfolio__content__card__media:focus {
+#main .profil__content__card__media:focus {
   border: none;
 }
-#main .portfolio__content__card__legend__title:focus {
+#main .profil__content__card__legend__title:focus {
   font-weight: 400;
   color: #901c1c;
 }
-#main .portfolio__content__card__legend__like:focus .portfolio__content__card__legend__like__empty, #main .portfolio__content__card__legend__like:hover .portfolio__content__card__legend__like__empty, #main .portfolio__content__card__legend__like:active .portfolio__content__card__legend__like__empty {
+#main .profil__content__card__legend__like:focus .profil__content__card__legend__like__empty, #main .profil__content__card__legend__like:hover .profil__content__card__legend__like__empty, #main .profil__content__card__legend__like:active .profil__content__card__legend__like__empty {
   font-size: 1.5em;
 }
 

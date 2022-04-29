@@ -289,7 +289,7 @@ header .container .logo-2 {
 #main .photographer__container__img:focus, #main .photographer__container__img:active {
   box-shadow: 3px 3px 12px #525252;
 }
-#main .portfolio {
+#main .profil {
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
@@ -298,7 +298,7 @@ header .container .logo-2 {
   width: 100%;
   margin-top: 30px;
 }
-#main .portfolio__menu {
+#main .profil__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -308,28 +308,28 @@ header .container .logo-2 {
   width: 270px;
   line-height: 69px;
 }
-#main .portfolio__menu__title {
+#main .profil__menu__title {
   box-sizing: border-box;
   margin: 0 15px 0 0;
   font-size: 1.125em;
   font-weight: 700;
 }
-#main .portfolio__menu__title:focus {
+#main .profil__menu__title:focus {
   color: #901c1c;
   font-size: 1.25em;
   outline: none;
 }
-#main .portfolio__menu__btn {
+#main .profil__menu__btn {
   position: relative;
   cursor: pointer;
 }
-#main .portfolio__menu__btn:hover #btn-select-menu {
+#main .profil__menu__btn:hover #btn-select-menu {
   display: flex;
 }
-#main .portfolio__menu__btn:hover #btn-inactive {
+#main .profil__menu__btn:hover #btn-inactive {
   box-shadow: none;
 }
-#main .portfolio__menu__btn1 {
+#main .profil__menu__btn1 {
   border: none;
   display: flex;
   flex-direction: row;
@@ -348,18 +348,18 @@ header .container .logo-2 {
   font-size: 1.125em;
   font-weight: 700;
 }
-#main .portfolio__menu__btn1:focus {
+#main .profil__menu__btn1:focus {
   border: none;
   outline: none;
   background-color: #db8876;
 }
-#main .portfolio__menu__btn1:active #btn-select-menu {
+#main .profil__menu__btn1:active #btn-select-menu {
   display: flex;
 }
-#main .portfolio__menu__btn1:active #btn-inactive {
+#main .profil__menu__btn1:active #btn-inactive {
   box-shadow: none;
 }
-#main .portfolio__menu__btn2 {
+#main .profil__menu__btn2 {
   position: absolute;
   top: 0;
   border: none;
@@ -379,10 +379,10 @@ header .container .logo-2 {
   font-weight: 700;
   z-index: 1;
 }
-#main .portfolio__menu__btn2:focus {
+#main .profil__menu__btn2:focus {
   display: flex;
 }
-#main .portfolio__menu__btn2__option-1 {
+#main .profil__menu__btn2__option-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -396,7 +396,7 @@ header .container .logo-2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-#main .portfolio__menu__btn2__option-1-vue {
+#main .profil__menu__btn2__option-1-vue {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: flex;
@@ -404,18 +404,18 @@ header .container .logo-2 {
   margin: 0;
   font-weight: 700;
 }
-#main .portfolio__menu__btn2__option-1-vue:hover, #main .portfolio__menu__btn2__option-1-vue:focus {
+#main .profil__menu__btn2__option-1-vue:hover, #main .profil__menu__btn2__option-1-vue:focus {
   outline: none;
   color: #fff;
 }
-#main .portfolio__menu__btn2__option-1-icon {
+#main .profil__menu__btn2__option-1-icon {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   display: flex;
   font-weight: 700;
   color: #fff;
 }
-#main .portfolio__menu__btn2__option-2, #main .portfolio__menu__btn2__option-3 {
+#main .profil__menu__btn2__option-2, #main .profil__menu__btn2__option-3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-weight: 700;
@@ -428,11 +428,11 @@ header .container .logo-2 {
   margin: 0;
   border-top: 1.5px solid #fff;
 }
-#main .portfolio__menu__btn2__option-2:hover, #main .portfolio__menu__btn2__option-2:focus, #main .portfolio__menu__btn2__option-3:hover, #main .portfolio__menu__btn2__option-3:focus {
+#main .profil__menu__btn2__option-2:hover, #main .profil__menu__btn2__option-2:focus, #main .profil__menu__btn2__option-3:hover, #main .profil__menu__btn2__option-3:focus {
   outline: none;
   color: #fff;
 }
-#main .portfolio__content {
+#main .profil__content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -441,7 +441,7 @@ header .container .logo-2 {
   padding: 40px 2%;
   width: 100%;
 }
-#main .portfolio__content__card {
+#main .profil__content__card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -453,7 +453,7 @@ header .container .logo-2 {
   margin-bottom: 10px;
   position: relative;
 }
-#main .portfolio__content__card__media {
+#main .profil__content__card__media {
   width: 350px;
   height: 300px;
   border-radius: 5px;
@@ -461,12 +461,12 @@ header .container .logo-2 {
   cursor: pointer;
   position: relative;
 }
-#main .portfolio__content__card__media:focus {
+#main .profil__content__card__media:focus {
   outline: none;
   border-right: 3px solid #d3573c;
   border-left: 3px solid #d3573c;
 }
-#main .portfolio__content__card__media__icon {
+#main .profil__content__card__media__icon {
   position: absolute;
   transform: translate(-50%, -50%);
   color: #d3573c;
@@ -475,7 +475,7 @@ header .container .logo-2 {
   top: 150px;
   left: 50%;
 }
-#main .portfolio__content__card__legend {
+#main .profil__content__card__legend {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -489,20 +489,20 @@ header .container .logo-2 {
   box-sizing: border-box;
   font-weight: 400;
 }
-#main .portfolio__content__card__legend__title {
+#main .profil__content__card__legend__title {
   font-size: 1.5em;
   width: 270px;
   margin: 0 10px 0 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-#main .portfolio__content__card__legend__title:focus {
+#main .profil__content__card__legend__title:focus {
   outline: none;
   border: none;
   font-weight: 700;
   color: #d3573c;
 }
-#main .portfolio__content__card__legend__like {
+#main .profil__content__card__legend__like {
   cursor: pointer;
   display: flex;
   box-sizing: border-box;
@@ -511,23 +511,23 @@ header .container .logo-2 {
   justify-content: flex-end;
   align-items: center;
 }
-#main .portfolio__content__card__legend__like:focus, #main .portfolio__content__card__legend__like:hover #main .portfolio__content__card__legend__like:active {
+#main .profil__content__card__legend__like:focus, #main .profil__content__card__legend__like:hover #main .profil__content__card__legend__like:active {
   outline: none;
   border: none;
 }
-#main .portfolio__content__card__legend__like:focus .portfolio__content__card__legend__like__empty, #main .portfolio__content__card__legend__like:hover #main .portfolio__content__card__legend__like:active .portfolio__content__card__legend__like__empty {
+#main .profil__content__card__legend__like:focus .profil__content__card__legend__like__empty, #main .profil__content__card__legend__like:hover #main .profil__content__card__legend__like:active .profil__content__card__legend__like__empty {
   font-size: 1.5em;
 }
-#main .portfolio__content__card__legend__like:focus .portfolio__content__card__legend__like__cunt, #main .portfolio__content__card__legend__like:hover #main .portfolio__content__card__legend__like:active .portfolio__content__card__legend__like__cunt {
+#main .profil__content__card__legend__like:focus .profil__content__card__legend__like__cunt, #main .profil__content__card__legend__like:hover #main .profil__content__card__legend__like:active .profil__content__card__legend__like__cunt {
   color: #d3573c;
 }
-#main .portfolio__content__card__legend__like__cunt {
+#main .profil__content__card__legend__like__cunt {
   font-weight: 500;
   font-size: 1.5em;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 }
-#main .portfolio__content__card__legend__like__empty {
+#main .profil__content__card__legend__like__empty {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   box-sizing: border-box;

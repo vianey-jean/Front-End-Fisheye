@@ -15,7 +15,7 @@ this.getContactForm = (person) => {
   const message = document.getElementById("message");
   const counter = document.getElementById("message-counter");
 
-  // variables definitions
+  // Definitions des variables
   let charLength = 0;
   counter.innerText = charLength;
 
@@ -25,7 +25,7 @@ this.getContactForm = (person) => {
   photographerContactName.setAttribute("aria-label", `${person.name}`);
   photographerContactName.setAttribute("tabindex", 1);
 
-  // open contact form modal
+  // ouvrir le formulaire de contact modal
   function launchContactForm() {
     sendConfirm.style.display = "none";
     contactForm.style.display = "flex";
@@ -34,7 +34,7 @@ this.getContactForm = (person) => {
     document.getElementById("body").setAttribute("aria-hidden", true);
     document.getElementById("body").classList.add("hidden");
 
-    // keyboard events to kkep focus in modal and to close
+    // événements clavier pour garder le focus en modal et fermer
     closeBtn.addEventListener("keydown", (e) => {
       e.preventDefault();
       e.stopPropagation();
@@ -53,7 +53,7 @@ this.getContactForm = (person) => {
     });
   }
 
-  // delay to close functions
+  // délai de fermeture des fonctions
   function manualCloseDelay() {
     setTimeout(closeContactForm, 200);
   }
@@ -61,7 +61,7 @@ this.getContactForm = (person) => {
     setTimeout(closeContactForm, 700);
   }
 
-  // close contact form
+  // fermer le formulaire de contact
   function closeContactForm() {
     document.getElementById("body").setAttribute("aria-hidden", false);
     document.getElementById("body").classList.remove("hidden");
@@ -74,11 +74,11 @@ this.getContactForm = (person) => {
     document.getElementById("message-error").style.display = "none";
   }
 
-  // Events listener on buttons to launch or close modal
+  // Écouteur d'événements sur les boutons pour lancer ou fermer le modal
   openBtn.addEventListener("click", launchContactForm);
   closeBtn.addEventListener("click", manualCloseDelay);
 
-  // Event Listener for message bos character cunt
+  // Écouteur d'événements pour la chatte du personnage de message bos
   message.addEventListener("input", (event) => {
     charLength = event.target.value.length;
     if (charLength > maxLengthMessage) {
@@ -87,7 +87,7 @@ this.getContactForm = (person) => {
     counter.innerText = charLength;
   });
 
-  // global form control on submit
+  // contrôle de formulaire global lors de la soumission
   formulaire.addEventListener("submit", function (event) {
     event.preventDefault();
     event.stopPropagation();

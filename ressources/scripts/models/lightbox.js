@@ -1,7 +1,7 @@
 this.lightboxVue = (medias) => {
   // DOM Elements
   const openLightbox = document.querySelectorAll(
-    ".portfolio__content__card__media"
+    ".profil__content__card__media"
   );
   const lightbox = document.querySelector("#lightbox");
   const closeLightbox = document.querySelector("#closeBox");
@@ -15,7 +15,7 @@ this.lightboxVue = (medias) => {
     .querySelector(".photographer__card__contact__name")
     .innerHTML.replace(" ", "_");
 
-  // open Lightbox event (img click or keydown)
+  // ouvrir l'événement Lightbox (img click ou keydown)
   openLightbox.forEach((mediaClicked) => {
     mediaClicked.addEventListener("click", (event) => {
       event.preventDefault();
@@ -41,7 +41,7 @@ this.lightboxVue = (medias) => {
     });
   });
 
-  // navigation in lightbox (arrows or keyboard)
+  // navigation dans la lightbox (flèches ou clavier)
   function navigate() {
     leftArrow.addEventListener("click", leftAction);
     rightArrow.addEventListener("click", rightAction);
@@ -116,7 +116,7 @@ this.lightboxVue = (medias) => {
     }
   };
 
-  // open lightbox fonction
+  // fonction lightbox ouverte
   function launchLightbox() {
     lightbox.setAttribute("aria-hidden", false);
     lightbox.classList.remove("hidden");
@@ -127,7 +127,7 @@ this.lightboxVue = (medias) => {
     document.getElementById("body").classList.add("hidden");
   }
 
-  // close delay to keep last media in lightbox
+  // délai de fermeture pour conserver le dernier média dans la lightbox
   function closeDelay(lastMedia) {
     openLightbox.forEach((media) => {
       let mediaTarget = media.getAttribute("data-media-id");
@@ -138,7 +138,7 @@ this.lightboxVue = (medias) => {
     setTimeout(quitLightbox, 100);
   }
 
-  // close lightbox event and focus on the same media in portfolio
+  // fermer l'événement lightbox et se concentrer sur le même média dans le profil
   closeLightbox.addEventListener("click", (e) => {
     e.preventDefault();
     lastMediaId = document
@@ -147,7 +147,7 @@ this.lightboxVue = (medias) => {
     closeDelay(lastMediaId);
   });
 
-  // close lightbox function
+  // fermer la fonction lightbox
   function quitLightbox() {
     document.getElementById("body").setAttribute("aria-hidden", false);
     document.getElementById("body").classList.remove("hidden");
@@ -159,7 +159,7 @@ this.lightboxVue = (medias) => {
     document.getElementById("lightbox-container").innerHTML = ``;
   }
 
-  // ask factory to create elements
+  // Démander la création des éléments
   const getLightbox = (mediaSelected, domPlace, photographerIdentity) => {
     let self = this;
     const temp = self.lightboxFactory(mediaSelected, photographerIdentity);

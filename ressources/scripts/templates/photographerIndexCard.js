@@ -1,4 +1,4 @@
-// factory of a photographer card in index page
+// fabrique d'une carte de photographe en page d'index
 this.indexCardFactory = (indexCard) => {
   this.getCard = () => {
     const newPhotographer = document.createElement("article");
@@ -20,7 +20,7 @@ this.indexCardFactory = (indexCard) => {
         <div class="photographer__legend__tags" tabindex="6" aria-label="ses mots-clef, via lequels vous pouvez lancer une recherche"></div>
         `;
 
-    // add tags to photographer card
+    // ajouter des tags à la carte du photographe
     indexCard.tags.forEach((tag) => {
       const newTag = document.createElement("span");
       newTag.classList.add("photographer__legend__tags__tag");

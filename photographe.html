@@ -45,12 +45,12 @@
         aria-pressed="false"
       >
         <img
-          src="./ressources/images/logo2.png"
+          src="ressources/images/logo2.png"
           class="logo-2"
           alt="logo de couleur différente au focus"
         />
         <img
-          src="./ressources/images/logo.png"
+          src="ressources/images/logo.png"
           class="logo-1"
           alt="logo du site et retour à l'accueil"
         />
@@ -58,61 +58,56 @@
     </header>
     <main id="main">
       <section class="photographer" id="photographer">
-        <!-- insert photographer article via photographer.js -->
+        <!-- insérer l'article du photographe via photographe.js -->
       </section>
-      <section class="portfolio">
-        <div class="portfolio__menu">
+      <section class="profil">
+        <div class="profil__menu">
           <p
-            class="portfolio__menu__title"
+            class="profil__menu__title"
             tabindex="10"
-            aria-label="trier par..."
-          >
+            aria-label="trier par..." >
             Trier par
           </p>
-          <div class="portfolio__menu__btn">
+          <div class="profil__menu__btn">
             <div
-              class="portfolio__menu__btn1"
-              tabindex="11"
+              class="profil__menu__btn1" tabindex="11"
               id="btn-inactive"
               aria-haspopup="listbox"
               aria-label="options de tri des médias"
-              aria-expanded="false"
-            >
-              <span class="portfolio__menu__btn1__pop" id="btn-vue"
-                >Popularité</span
+              aria-expanded="false">
+              <span class="profil__menu__btn1__pop" id="btn-vue"
+                >Selection</span
               >
               <span
-                class="portfolio__menu__btn1__icon fa-solid fa-angle-down"
+                class="profil__menu__btn1__icon fa-solid fa-angle-down"
               ></span>
             </div>
             <div
-              class="portfolio__menu__btn2"
+              class="profil__menu__btn2"
               id="btn-select-menu"
               aria-haspopup="listbox"
               tabindex="0"
-              aria-expanded="true"
-            >
-              <span class="portfolio__menu__btn2__option-1">
+              aria-expanded="true">
+              <span class="profil__menu__btn2__option-1">
                 <span
-                  class="portfolio__menu__btn2__option-1-vue"
+                  class="profil__menu__btn2__option-1-vue"
                   aria-label="option de tri des médias"
                   tabindex="0"
-                  data-option="pop"
-                  >Popularité</span
+                  data-option="pop">Popularité</span
                 >
                 <span
-                  class="portfolio__menu__btn2__option-1-icon fa-solid fa-angle-up"
+                  class="profil__menu__btn2__option-1-icon fa-solid fa-angle-up"
                 ></span>
               </span>
               <span
-                class="portfolio__menu__btn2__option-2"
+                class="profil__menu__btn2__option-2"
                 aria-label="option de tri des médias"
                 tabindex="0"
                 data-option="date"
                 >Date</span
               >
               <span
-                class="portfolio__menu__btn2__option-3"
+                class="profil__menu__btn2__option-3"
                 aria-label="option de tri des médias"
                 tabindex="0"
                 data-option="title"
@@ -121,8 +116,8 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__content" id="portfolioContent">
-          <!-- insert articles medias via photographer.js -->
+        <div class="profil__content" id="profilContent">
+          <!-- insérer des articles dans les médias via le photographe.js-->
         </div>
       </section>
     </main>
@@ -137,14 +132,14 @@
           class="footer__infos__cunt"
           aria-label="total des mentions j'aime"
         >
-          <!-- insert cunt via photographer.js -->
+          <!-- insérer la chatte via photographe.js -->
         </span>
         <span
           class="footer__infos__heart fas fa-heart"
           aria-label="icone coeur"
         ></span>
       </div>
-      <!-- insert price via photographerCardFactory.js -->
+      <!-- insérer le prix via photographeCard.js -->
     </footer>
   </body>
 
@@ -162,7 +157,7 @@
         tabindex="2"
       ></span>
       <div class="lightbox__content__container" id="lightbox-container">
-        <!-- insert lightbox.js -->
+        <!-- insérer lightbox.js -->
       </div>
       <span
         class="lightbox__content__icon--right fa-solid fa-angle-right"
@@ -188,7 +183,7 @@
       tabindex="1"
     >
       <p class="contact__content__title" id="contactForm-photographer-name">
-        <!-- insert contactForm.js -->
+        <!-- inserer contactForm.js -->
       </p>
       <div class="contact__content__close" id="closeForm" tabindex="2">
         <span class="contact__content__close__icon fas fa-times"></span>
@@ -286,7 +281,7 @@
               tabindex="1"
             ></textarea>
             <span id="message-counter">
-              <!-- insert via contactForm.js -->
+              <!-- inserer via contactForm.js -->
             </span>
             <span id="message-max-length">/ 500</span>
             <span
@@ -325,6 +320,6 @@
   <script src="ressources/scripts/models/lightbox.js"></script>
   <script src="ressources/scripts/models/contactForm.js"></script>
   <script src="ressources/scripts/templates/photographerCard.js"></script>
-  <script src="ressources/scripts/factory/photographerPortfolioFactory.js"></script>
+  <script src="ressources/scripts/factory/photographerProfilFactory.js"></script>
   <script src="ressources/scripts/models/photographer.js"></script>
 </html>

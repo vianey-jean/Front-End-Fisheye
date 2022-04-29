@@ -3,7 +3,7 @@ let listTags = [];
 let tagsZoneDom = document.getElementById("tagsList");
 let tagsPhotographerDom = document.querySelector(".photographer__legend__tags");
 
-// async functions json file data extract
+// fonctions asynchrones extrait de données de fichier json
 const fetchData = async () => {
   const res = await fetch("ressources/data/photographers.json");
   const data = await res.json();
@@ -14,7 +14,7 @@ const getPhotographersData = async () => {
   return data.photographers;
 };
 
-// function to create tags list with json data
+// fonction pour créer une liste de balises avec des données json
 const getTagsListData = (photographers) => {
   photographers.forEach((photographer) => {
     photographer.tags.forEach((tag) => {
@@ -26,7 +26,7 @@ const getTagsListData = (photographers) => {
   return listTags;
 };
 
-// function to create header tags list
+// fonction pour créer une liste de balises d'en-tête
 const getHeaderTagsList = (listTags) => {
   let self = this;
   listTags.forEach((tag) => {
@@ -34,7 +34,7 @@ const getHeaderTagsList = (listTags) => {
     const newHeaderTag = instance.self.getHeaderTag();
     tagsZoneDom.appendChild(newHeaderTag);
 
-    // click event on a tag
+    // événement de clic sur un tag
     newHeaderTag.addEventListener("click", (e) => {
       if (e.target.id == "tag-selected") {
         document.location.href = "index.html";
@@ -48,11 +48,11 @@ const getHeaderTagsList = (listTags) => {
   });
 };
 
-// function to create photographers cards with json data and tag selection
+// fonction pour créer des cartes de photographes avec des données json et une sélection de balises
 const getPhotographerCards = (photographers, tagSelected) => {
   let self = this;
 
-  // variable that include only photographers tagged or all photographers if no tag selected
+  // variable qui inclut uniquement les photographes tagués ou tous les photographes si aucun tag n'est sélectionné
   const filteredPhotographers = photographers.filter((photographer) => {
     return !tagSelected || photographer.tags.includes(tagSelected);
   });
@@ -60,14 +60,14 @@ const getPhotographerCards = (photographers, tagSelected) => {
     document.querySelector("h1").focus();
   }
 
-  // create and insert photographer card
+  // créer et insérer une carte de photographe
   const container = document.getElementById("photographers");
   container.innerHTML = "";
   filteredPhotographers.forEach((photographer) => {
     const instance = self.indexCardFactory(photographer);
     const newCard = instance.self.getCard();
     container.appendChild(newCard);
-    // header tags function extend to photographer card tag
+    // la fonction des balises d'en-tête s'étend à la balise de la carte du photographe
     const personnalTags = newCard.querySelectorAll(
       ".photographer__legend__tags__tag"
     );
@@ -81,21 +81,21 @@ const getPhotographerCards = (photographers, tagSelected) => {
   });
 };
 
-// await global function
+// attendre la fonction globale
 const init = async () => {
   let self = this;
   const photographers = await getPhotographersData();
   const tagsList = getTagsListData(photographers);
 
-  //url search tag
+  //balise de recherche d'url
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   let tagUrl = urlParams.get("tag");
 
-  // call header tags list function
+  // fonction de liste de balises d'en-tête d'appel
   getHeaderTagsList(tagsList);
 
-  // gestion of selected tag and style css
+  // gestion des balises sélectionnées et du style css
   tagsList.forEach((tag) => {
     if (tag == tagUrl) {
       let domCardTag = document.getElementsByClassName(tag)[0];
@@ -109,10 +109,10 @@ const init = async () => {
     }
   });
 
-  // call photographers cards
+  // cartes d'appel des photographes
   getPhotographerCards(photographers, tagUrl);
 
-  // call keyboard navigation function for tags
+  // appeler la fonction de navigation du clavier pour les balises
   tagsZoneDom = document.getElementById("tagsList");
   tagsPhotographerDom = document.querySelector(".photographer__legend__tags");
   tagsZoneDom.addEventListener("keydown", (e) => {
