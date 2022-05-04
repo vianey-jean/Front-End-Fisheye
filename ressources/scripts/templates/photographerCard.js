@@ -6,11 +6,11 @@ this.photographerCardFactory = (photographerCard) => {
     photographer.innerHTML = `
         <div class="photographer__card__contact">
             <h1 class="photographer__card__contact__name" tabindex="4" aria-label="${photographerCard.name}">${photographerCard.name}</h1>
-            <button class="photographer__card__contact__btn" id="openForm" tabindex="7" aria-label="contactez-moi">Contactez-moi</button>
+            <button class="photographer__card__contact__btn" id="openForm" tabindex="7" aria-label="Formulaire de contacte">Contactez-moi</button>
         </div>
         <div class="photographer__legend" tabindex="5" aria-label="informations de ${photographerCard.name}">
-            <h2 class="photographer__legend__city" aria-label="sa localisation">${photographerCard.city}, ${photographerCard.country}</h2>
-            <p class="photographer__legend__slogan" aria-label="son slogan">${photographerCard.tagline}</p>
+            <h2 class="photographer__legend__city" aria-label="sa localisation est de ${photographerCard.city}, ${photographerCard.country}">${photographerCard.city}, ${photographerCard.country}</h2>
+            <p class="photographer__legend__slogan" aria-label="son slogan est de: ${photographerCard.tagline}">${photographerCard.tagline}</p>
         </div>
         <div class="photographer__legend__tags" tabindex="6" aria-label="ses mots-clef, via lequels vous pouvez lancer une recherche"></div>
         `;

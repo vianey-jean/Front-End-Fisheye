@@ -13,7 +13,7 @@ this.indexCardFactory = (indexCard) => {
             <h2 class="photographer__card__name" aria-label="nom du photographe">${indexCard.name}</h2>
         </a>
         <div class="photographer__legend" tabindex="6" aria-label="informations sur ${indexCard.name}">
-            <h3 class="photographer__legend__city" aria-label="sa localisation">${indexCard.city}, ${indexCard.country}</h3>
+            <h3 class="photographer__legend__city" aria-label="sa localisation est de: ${indexCard.city}, ${indexCard.country}">${indexCard.city}, ${indexCard.country}</h3>
             <p class="photographer__legend__slogan" aria-label="son slogan">${indexCard.tagline}</p>
             <p class="photographer__legend__price" aria-label="son prix">${indexCard.price}€/jour</p>
         </div>

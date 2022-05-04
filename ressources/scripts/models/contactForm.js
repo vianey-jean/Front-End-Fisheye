@@ -21,7 +21,7 @@ this.getContactForm = (person) => {
 
   const maxLengthMessage = message.getAttribute("maxlength");
 
-  photographerContactName.innerHTML = `<div id ="gauch">Contactez</div> <div id="droite">${person.name}</div>`;
+  photographerContactName.innerHTML = `<div id ="gauch">Contactez</div> <div id="droite" >${person.name}</div>`;
   photographerContactName.setAttribute("aria-label", `${person.name}`);
   photographerContactName.setAttribute("tabindex", 1);
 
