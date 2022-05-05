@@ -31,6 +31,21 @@ const getTagsListData = (photographers) => {
   return listTags;
 };
 
+// Fabrique de la liste des balises d'en-tête pour la page d'index
+this.headerTagFactory = (headerTag) => {
+  this.getHeaderTag = () => {
+    const newHeaderTag = document.createElement("span");
+    newHeaderTag.classList.add("tag");
+    newHeaderTag.classList.add(headerTag);
+    newHeaderTag.setAttribute("data-tag", headerTag);
+    newHeaderTag.setAttribute("aria-label", headerTag);
+    newHeaderTag.innerHTML = `#${headerTag}`;
+    return newHeaderTag;
+  };
+  return this;
+};
+
+
 // fonction pour créer une liste de balises d'en-tête
 const getHeaderTagsList = (listTags) => {
   let self = this;
@@ -52,6 +67,8 @@ const getHeaderTagsList = (listTags) => {
     });
   });
 };
+
+
 
 // fonction pour créer des cartes de photographes avec des données json et une sélection de balises
 const getPhotographerCards = (photographers, tagSelected) => {
@@ -117,15 +134,6 @@ const init = async () => {
   // cartes d'appel des photographes
   getPhotographerCards(photographers, tagUrl);
 
-  // appeler la fonction de navigation du clavier pour les balises
-  tagsZoneDom = document.getElementById("tagsList");
-  tagsPhotographerDom = document.querySelector(".photographer__legend__tags");
-  tagsZoneDom.addEventListener("keydown", (e) => {
-    self.enterTagsNav(e, tagsZoneDom);
-  });
-  tagsPhotographerDom.addEventListener("keydown", (e) => {
-    self.enterTagsNav(e, tagsPhotographerDom);
-  });
 };
 
 init();
