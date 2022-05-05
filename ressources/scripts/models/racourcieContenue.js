@@ -1,8 +1,8 @@
 // raccourci vers la section principale (page d'index)
 
 // DOM elements
-const racourci = document.getElementById("racourci");
 const headerDom = document.getElementById("header");
+const racourci = document.getElementById("racourci");
 
 // retard de visibilité
 function visibilityDelay() {
