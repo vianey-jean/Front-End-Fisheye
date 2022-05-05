@@ -4,13 +4,16 @@ let tagsZoneDom = document.getElementById("tagsList");
 let tagsPhotographerDom = document.querySelector(".photographer__legend__tags");
 
 // fonctions asynchrones extrait de données de fichier json
-const fetchData = async () => {
-  const res = await fetch("ressources/data/photographers.json");
-  const data = await res.json();
+const fetchData = async () => {//recuperation des donné sur json
+  const res = await fetch("ressources/data/photographers.json");// recherche dans une url precis
+  const data = await res.json();// on recupère de on met dans le data les valeur obtenues
+  //console.log (data); //Il faut activé pour voir les donnné json a recuperer
   return data;
+  
 };
 const getPhotographersData = async () => {
   const data = await fetchData();
+  //console.log(data);// recuperation des données
   return data.photographers;
 };
 
@@ -20,9 +23,11 @@ const getTagsListData = (photographers) => {
     photographer.tags.forEach((tag) => {
       if (!listTags.includes(tag)) {
         listTags.push(tag);
+        //console.log(tag);// Afficher les tags vient de json
       }
     });
   });
+
   return listTags;
 };
 

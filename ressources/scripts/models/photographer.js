@@ -16,6 +16,7 @@ btnSelected.push(option1Btn, option2Btn, option3Btn);
 const fetchData = async () => {
   const res = await fetch("ressources/data/photographers.json");
   const data = await res.json();
+ // console.log (data); //Il faut activé pour voir les donnné json a recuperer
   return data;
 };
 
@@ -33,6 +34,7 @@ const getMediasData = async () => {
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const urlId = urlParams.get("id");
+//console.log(urlId);//Prendre son id
 
 // fonction pour créer une carte de photographe avec des données json et un identifiant d'url
 const getPhotographerCard = (photographers) => {
@@ -45,7 +47,9 @@ const getPhotographerCard = (photographers) => {
         .getElementById("photographer")
         .insertBefore(card, document.getElementById("photographer").firstChild);
       surname = photographer.name.replace(" ", "_"); // nom de famille à utiliser comme répertoire
+      //console.log(surname);//selection du nom
       self.getContactForm(photographer);
+      //console.log(photographer);// tous les renseignement du photographe
     }
     // la fonction de balises d'en-tête d'index s'étend à la balise de carte de photographe
     const personnalTags = document.querySelectorAll(
