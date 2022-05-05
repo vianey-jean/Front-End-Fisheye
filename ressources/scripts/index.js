@@ -133,6 +133,15 @@ const init = async () => {
 
   // cartes d'appel des photographes
   getPhotographerCards(photographers, tagUrl);
+   // appeler la fonction de navigation du clavier pour les balises
+   tagsZoneDom = document.getElementById("tagsList");
+   tagsPhotographerDom = document.querySelector(".photographer__legend__tags");
+   tagsZoneDom.addEventListener("keydown", (e) => {
+     self.enterTagsNav(e, tagsZoneDom);
+   });
+   tagsPhotographerDom.addEventListener("keydown", (e) => {
+     self.enterTagsNav(e, tagsPhotographerDom);
+   });
 
 };
 
