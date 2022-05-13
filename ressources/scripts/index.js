@@ -20,7 +20,7 @@ const getPhotographersData = async () => {
 // fonction pour créer une liste de balises avec des données json
 const getTagsListData = (photographers) => {
   photographers.forEach((photographer) => {
-    photographer.tags.forEach((tag) => {
+        photographer.tags.forEach((tag) => {
       if (!listTags.includes(tag)) {
         listTags.push(tag);
         //console.log(tag);// Afficher les tags vient de json
@@ -32,7 +32,7 @@ const getTagsListData = (photographers) => {
 };
 
 // Fabrique de la liste des balises d'en-tête pour la page d'index
-this.headerTagFactory = (headerTag) => {
+const headerTagFactory = (headerTag) => {
   this.getHeaderTag = () => {
     const newHeaderTag = document.createElement("span");
     newHeaderTag.classList.add("tag");
@@ -48,10 +48,10 @@ this.headerTagFactory = (headerTag) => {
 
 // fonction pour créer une liste de balises d'en-tête
 const getHeaderTagsList = (listTags) => {
-  let self = this;
+  //let self = this;
   listTags.forEach((tag) => {
-    const instance = self.headerTagFactory(tag);
-    const newHeaderTag = instance.self.getHeaderTag();
+    const instance = headerTagFactory(tag);
+    const newHeaderTag = instance.getHeaderTag();
     tagsZoneDom.appendChild(newHeaderTag);
 
     // événement de clic sur un tag
