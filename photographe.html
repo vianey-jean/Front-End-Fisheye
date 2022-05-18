@@ -121,6 +121,178 @@
           <!-- insérer des articles dans les médias via le photographe.js-->
         </div>
       </section>
+      
+  <div
+  class="lightbox"
+  id="lightbox"
+  aria-label="média affiché en plein écran"
+  tabindex="1"
+  aria-hidden="true"
+>
+  <div class="lightboxContent">
+    <span
+      class="lightboxContentIcon--left fa-solid fa-angle-left"
+      aria-label="média précédant"
+      tabindex="2"
+    ></span>
+    <div class="lightboxContent__container" id="lightbox-container">
+      <!-- insérer lightbox.js -->
+    </div>
+    <span
+      class="lightboxContentIcon--right fa-solid fa-angle-right"
+      aria-label="média suivant"
+      tabindex="2"
+    ></span>
+    <div
+      class="lightboxContentIconFermeture"
+      id="closeBox"
+      aria-label="quitter l'affichage plein écran"
+      tabindex="2"
+    >
+      <span class="lightboxContentIconFermeture__icon fas fa-times"></span>
+    </div>
+  </div>
+</div>
+
+<div class="contact" id="contact">
+  <div
+    class="contactContent"
+    id="content"
+    aria-labelledby="nomContactPhotographe"
+    tabindex="1"
+  >
+    <p class="contactContentTitre" id="nomContactPhotographe">
+      <!-- inserer contactForm.js -->
+    </p>
+    <div class="contactContentFermeture" id="closeForm"   tabindex="2">
+      <span class="contactContentFermeture__icon fas fa-times" aria-label="Fermeture du formulaire"></span>
+    </div>
+    <div class="contactContentBody">
+      <form
+        class="contactContentBody__form"
+        name="user"
+        action="photographe.html"
+        method="get"
+        id="form"
+      >
+        <div class="contactContentBodyData">
+          <label
+            class="contactContentBodyData__label"
+            for="first"
+            tabindex="1"
+            >Prénom</label
+          >
+          <input
+            class="contactContentBodyData__control"
+            type="text"
+            id="first"
+            name="first"
+            placeholder="Ne peut être inférieur à 2 lettres."
+            tabindex="1"
+          />
+          <span
+            class="contactContentNomErreur"
+            id="first-error"
+            tabindex="1"
+            aria-label="saisie du prénom incorrecte"
+            >Saisie incorrecte</span
+          >
+        </div>
+        <div class="contactContentBodyData">
+          <label
+            class="contactContentBodyData__label"
+            for="last"
+            tabindex="1"
+            >Nom</label
+          >
+          <input
+            class="contactContentBodyData__control"
+            type="text"
+            id="last"
+            name="last"
+            placeholder="Ne peut être inférieur à 2 lettre."
+            tabindex="1"
+          />
+          <span
+            class="contactContentPrenomErreur"
+            id="last-error"
+            tabindex="1"
+            aria-label="saisie du nom incorrecte"
+            >Saisie incorrecte</span
+          >
+        </div>
+        <div class="contactContentBodyData">
+          <label
+            class="contactContentBodyData__label"
+            for="email"
+            tabindex="1"
+            >Email</label
+          >
+          <input
+            class="contactContentBodyData__control"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Veuillez indiquer une adresse mail valide."
+            tabindex="1"
+          />
+          <span
+            class="contactContentEmailErreur"
+            id="email-error"
+            tabindex="1"
+            aria-label="saisie de l'adresse mail incorrecte"
+            >Saisie incorrecte</span
+          >
+        </div>
+        <div class="contactContentBodyData">
+          <label
+            class="contactContentBodyData__label"
+            for="message"
+            tabindex="1"
+            >Votre message</label
+          >
+          <textarea
+            class="contactContentBodyData__control"
+            id="message"
+            name="message"
+            maxlength="500"
+            placeholder="Votre message est nécessaire."
+            tabindex="1"
+          ></textarea>
+          <span id="message-counter">
+            <!-- inserer via contactForm.js -->
+          </span>
+          <span id="message-max-length">/ 500</span>
+          <span
+            class="contactContentMsgErreur"
+            id="message-error"
+            tabindex="1"
+            aria-label="votre message est vide"
+            >Saisie incorrecte</span
+          >
+        </div>
+        <div class="contactContentBodyBouton">
+          <input
+            id="submit"
+            class="contactContentBodyBouton__btn"
+            type="submit"
+            value="Envoyer"
+            tabindex="1"
+            role="button"
+            aria-pressed="false"
+          />
+          <span
+            class="contactContentConfirme"
+            id="confirm"
+            tabindex="1"
+            aria-label="Message envoyé avec succès"
+            >Message envoyé, merci.</span
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
     </main>
     <footer
       class="footer"
@@ -142,185 +314,15 @@
       </div>
       <!-- insérer le prix via photographeCard.js -->
     </footer>
+    <script src="ressources/scripts/models/tagsNavWithKeyboard.js"></script>
+    <script src="ressources/scripts/factory/lightboxFactory.js"></script>
+    <script src="ressources/scripts/models/lightbox.js"></script>
+    <script src="ressources/scripts/models/contactForm.js"></script>
+    <script src="ressources/scripts/templates/photographerCard.js"></script>
+    <script src="ressources/scripts/factory/photographerProfilFactory.js"></script>
+  
+    <script src="ressources/scripts/models/photographer.js"></script>
   </body>
 
-  <div
-    class="lightbox"
-    id="lightbox"
-    aria-label="média affiché en plein écran"
-    tabindex="1"
-    aria-hidden="true"
-  >
-    <div class="lightboxContent">
-      <span
-        class="lightboxContentIcon--left fa-solid fa-angle-left"
-        aria-label="média précédant"
-        tabindex="2"
-      ></span>
-      <div class="lightboxContent__container" id="lightbox-container">
-        <!-- insérer lightbox.js -->
-      </div>
-      <span
-        class="lightboxContentIcon--right fa-solid fa-angle-right"
-        aria-label="média suivant"
-        tabindex="2"
-      ></span>
-      <div
-        class="lightboxContentIconFermeture"
-        id="closeBox"
-        aria-label="quitter l'affichage plein écran"
-        tabindex="2"
-      >
-        <span class="lightboxContentIconFermeture__icon fas fa-times"></span>
-      </div>
-    </div>
-  </div>
 
-  <div class="contact" id="contact">
-    <div
-      class="contactContent"
-      id="content"
-      aria-labelledby="nomContactPhotographe"
-      tabindex="1"
-    >
-      <p class="contactContentTitre" id="nomContactPhotographe">
-        <!-- inserer contactForm.js -->
-      </p>
-      <div class="contactContentFermeture" id="closeForm"   tabindex="2">
-        <span class="contactContentFermeture__icon fas fa-times" aria-label="Fermeture du formulaire"></span>
-      </div>
-      <div class="contactContentBody">
-        <form
-          class="contactContentBody__form"
-          name="user"
-          action="photographe.html"
-          method="get"
-          id="form"
-        >
-          <div class="contactContentBodyData">
-            <label
-              class="contactContentBodyData__label"
-              for="first"
-              tabindex="1"
-              >Prénom</label
-            >
-            <input
-              class="contactContentBodyData__control"
-              type="text"
-              id="first"
-              name="first"
-              placeholder="Ne peut être inférieur à 2 lettres."
-              tabindex="1"
-            />
-            <span
-              class="contactContentNomErreur"
-              id="first-error"
-              tabindex="1"
-              aria-label="saisie du prénom incorrecte"
-              >Saisie incorrecte</span
-            >
-          </div>
-          <div class="contactContentBodyData">
-            <label
-              class="contactContentBodyData__label"
-              for="last"
-              tabindex="1"
-              >Nom</label
-            >
-            <input
-              class="contactContentBodyData__control"
-              type="text"
-              id="last"
-              name="last"
-              placeholder="Ne peut être inférieur à 2 lettre."
-              tabindex="1"
-            />
-            <span
-              class="contactContentPrenomErreur"
-              id="last-error"
-              tabindex="1"
-              aria-label="saisie du nom incorrecte"
-              >Saisie incorrecte</span
-            >
-          </div>
-          <div class="contactContentBodyData">
-            <label
-              class="contactContentBodyData__label"
-              for="email"
-              tabindex="1"
-              >Email</label
-            >
-            <input
-              class="contactContentBodyData__control"
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Veuillez indiquer une adresse mail valide."
-              tabindex="1"
-            />
-            <span
-              class="contactContentEmailErreur"
-              id="email-error"
-              tabindex="1"
-              aria-label="saisie de l'adresse mail incorrecte"
-              >Saisie incorrecte</span
-            >
-          </div>
-          <div class="contactContentBodyData">
-            <label
-              class="contactContentBodyData__label"
-              for="message"
-              tabindex="1"
-              >Votre message</label
-            >
-            <textarea
-              class="contactContentBodyData__control"
-              id="message"
-              name="message"
-              maxlength="500"
-              placeholder="Votre message est nécessaire."
-              tabindex="1"
-            ></textarea>
-            <span id="message-counter">
-              <!-- inserer via contactForm.js -->
-            </span>
-            <span id="message-max-length">/ 500</span>
-            <span
-              class="contactContentMsgErreur"
-              id="message-error"
-              tabindex="1"
-              aria-label="votre message est vide"
-              >Saisie incorrecte</span
-            >
-          </div>
-          <div class="contactContentBodyBouton">
-            <input
-              id="submit"
-              class="contactContentBodyBouton__btn"
-              type="submit"
-              value="Envoyer"
-              tabindex="1"
-              role="button"
-              aria-pressed="false"
-            />
-            <span
-              class="contactContentConfirme"
-              id="confirm"
-              tabindex="1"
-              aria-label="Message envoyé avec succès"
-              >Message envoyé, merci.</span
-            >
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <script src="ressources/scripts/models/tagsNavWithKeyboard.js"></script>
-  <script src="ressources/scripts/factory/lightboxFactory.js"></script>
-  <script src="ressources/scripts/models/lightbox.js"></script>
-  <script src="ressources/scripts/models/contactForm.js"></script>
-  <script src="ressources/scripts/templates/photographerCard.js"></script>
-  <script src="ressources/scripts/factory/photographerProfilFactory.js"></script>
-
-  <script src="ressources/scripts/models/photographer.js"></script>
 </html>

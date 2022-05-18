@@ -17,7 +17,7 @@ const getPhotographersData = async () => {
   return data.photographers;
 };
 
-// fonction pour créer une liste de balises avec des données json
+// fonction pour recupère une liste de balises des tags avec des données data.photographers
 const getTagsListData = (photographers) => {
   photographers.forEach((photographer) => {
         photographer.tags.forEach((tag) => {
@@ -31,7 +31,7 @@ const getTagsListData = (photographers) => {
   return listTags;
 };
 
-// Fabrique de la liste des balises d'en-tête pour la page d'index
+// Fabrique les balises de tag d'en-tête pour la page d'index
 const headerTagFactory = (headerTag) => {
   this.getHeaderTag = () => {
     const newHeaderTag = document.createElement("span");
